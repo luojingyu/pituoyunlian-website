@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>普托雲聯 - 注塑行業數字化雲工廠解決方案專家</title>
+    <meta name="description" content="深圳普托雲聯，專注注塑行業數字化解決方案，已服務 100+ 家注塑工廠，幫助工廠減少 15%-30% 浪費，提升良品率">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">普托雲聯</div>
+            <ul class="nav-links">
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="solutions.html">解決方案</a></li>
+                <li><a href="products.html">產品展示</a></li>
+                <li><a href="cases.html">客戶案例</a></li>
+                <li><a href="about.html">關於我們</a></li>
+                <li><a href="contact.html">聯繫我們</a></li>
+            </ul>
+            <div class="lang-switch">
+                <a href="../zh/index.html">简</a>
+                <a href="../tw/index.html">繁</a>
+                <a href="../en/index.html">EN</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <h1>讓你的注塑廠浪費減少 30%</h1>
+            <p class="subtitle">100+ 工廠驗證的數字化雲工廠解決方案</p>
+            <div class="hero-cta">
+                <a href="#roi-calculator" class="btn btn-primary">免費計算你的工廠能省多少錢</a>
+                <a href="contact.html" class="btn btn-secondary">預約演示</a>
+            </div>
+            <p class="trust-badge">✓ 已服務 100+ 家注塑工廠 &nbsp;&nbsp; ✓ 平均浪費減少 27%</p>
+        </div>
+    </section>
+
+    <section class="pain-points">
+        <div class="container">
+            <h2>你的工廠是否存在這些問題？</h2>
+            <div class="pain-grid">
+                <div class="pain-card">
+                    <div class="pain-icon">🧠</div>
+                    <h3>技術經驗流失</h3>
+                    <p>老師傅的經驗在腦子裡，離職後新人要重新試錯，用幾十公斤料交學費</p>
+                </div>
+                <div class="pain-card">
+                    <div class="pain-icon">📦</div>
+                    <h3>生產黑箱子</h3>
+                    <p>知道用了 500 噸料，但不知道浪費在哪台機器、哪個班次、哪個產品</p>
+                </div>
+                <div class="pain-card">
+                    <div class="pain-icon">⚔️</div>
+                    <h3>扯皮推諉</h3>
+                    <p>出次品後"原料不好""模具不行""機器故障"，互相踢皮球，一筆糊塗賬</p>
+                </div>
+                <div class="pain-card">
+                    <div class="pain-icon">🏭</div>
+                    <h3>驗廠沒面子</h3>
+                    <p>大客戶來驗廠，翻一摞摞手寫單子？數字化管理是接大訂單的敲門磚</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="solutions">
+        <div class="container">
+            <h2>我們的解決方案</h2>
+            <div class="solution-grid">
+                <div class="solution-card">
+                    <h3>👤 人 - 人效管理</h3>
+                    <p>哪個人乾得好，哪個人乾得一般？用客觀數據說話，不再只聽嘴巴說</p>
+                </div>
+                <div class="solution-card">
+                    <h3>🔧 機 - 設備維護</h3>
+                    <p>模具、機器定期強制提醒維護保養，不做就限制使用，讓工人不得不做</p>
+                </div>
+                <div class="solution-card">
+                    <h3>📦 料 - 原料管控</h3>
+                    <p>讓工廠每一斤原料都來去明白！數據監控，料房管理，浪費無所遁形</p>
+                </div>
+                <div class="solution-card">
+                    <h3>📋 法 - SOP/工藝參數</h3>
+                    <p>射膠超 2 克偏差直接警報或鎖機，工藝庫自學習優化，比老技術廠長還精</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="roi-calculator" class="roi-calculator">
+        <div class="container">
+            <h2>算算你的工廠能省多少錢</h2>
+            <div class="calculator">
+                <div class="calc-inputs">
+                    <div class="input-group">
+                        <label>機器數量（台）</label>
+                        <input type="number" id="machine-count" value="20" min="1">
+                    </div>
+                    <div class="input-group">
+                        <label>每月原料用量（噸）</label>
+                        <input type="number" id="material-usage" value="100" min="1">
+                    </div>
+                    <div class="input-group">
+                        <label>當前良品率（%）</label>
+                        <input type="number" id="yield-rate" value="95" min="1" max="100">
+                    </div>
+                    <div class="input-group">
+                        <label>原料單價（元/噸）</label>
+                        <input type="number" id="material-price" value="15000" min="1">
+                    </div>
+                </div>
+                <button class="btn btn-primary" onclick="calculateROI()">開始計算</button>
+                <div id="roi-result" class="roi-result" style="display:none;">
+                    <h3>預計效果</h3>
+                    <div class="result-grid">
+                        <div class="result-item">
+                            <div class="result-value" id="waste-reduction">¥0</div>
+                            <div class="result-label">每月節省浪費</div>
+                        </div>
+                        <div class="result-item">
+                            <div class="result-value" id="yield-improvement">0%</div>
+                            <div class="result-label">良品率提升</div>
+                        </div>
+                        <div class="result-item">
+                            <div class="result-value" id="payback-period">0 個月</div>
+                            <div class="result-label">投資回收期</div>
+                        </div>
+                    </div>
+                    <p class="result-note">* 基於 100+ 工廠實際數據估算，實際效果可能有所不同</p>
+                    <a href="contact.html" class="btn btn-secondary">獲取詳細方案</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cases">
+        <div class="container">
+            <h2>客戶案例</h2>
+            <div class="case-grid">
+                <div class="case-card">
+                    <h3>東莞塘夏 · 塑料電子科技</h3>
+                    <p class="case-scale">規模：33 台機器（100T-470T）</p>
+                    <p class="case-result">✓ 浪費減少 27%（約 2 萬/月）</p>
+                    <p class="case-result">✓ 良品率提升 2%</p>
+                </div>
+                <div class="case-card">
+                    <h3>惠州淡水 · 塑膠電子科技</h3>
+                    <p class="case-scale">規模：10 台機器（900T-2100T）</p>
+                    <p class="case-result">✓ 浪費減少 28%（約 8 千/月）</p>
+                    <p class="case-result">✓ 良品率提升 1%</p>
+                </div>
+            </div>
+            <a href="cases.html" class="btn btn-secondary">查看更多案例</a>
+        </div>
+    </section>
+
+    <section class="value-props">
+        <div class="container">
+            <h2>為什麼選擇普托雲聯</h2>
+            <div class="value-grid">
+                <div class="value-item">
+                    <div class="value-num">15-30%</div>
+                    <div class="value-desc">工廠浪費減少</div>
+                </div>
+                <div class="value-item">
+                    <div class="value-num">50%</div>
+                    <div class="value-desc">試錯成本下降</div>
+                </div>
+                <div class="value-item">
+                    <div class="value-num">100+</div>
+                    <div class="value-desc">服務工廠數量</div>
+                </div>
+                <div class="value-item">
+                    <div class="value-num">99%</div>
+                    <div class="value-desc">注塑機品牌兼容</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>準備好開始數字化轉型了嗎？</h2>
+            <p>聯繫我們，獲取專屬解決方案和報價</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-primary">立即諮詢</a>
+                <a href="tel:13510986820" class="btn btn-secondary">📞 135-1098-6820</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>普托雲聯</h4>
+                    <p>做最實用的注塑工業數字化服務平台</p>
+                </div>
+                <div class="footer-col">
+                    <h4>聯繫我們</h4>
+                    <p>深圳：深圳市龍崗區大運軟件小鎮 75 棟 2 樓</p>
+                    <p>東莞：東莞市松山湖中匯世銀大廈 6 樓</p>
+                    <p>電話：0755-89589212 / 135-1098-6820</p>
+                    <p>郵箱：zhuang.luo@tjskynet.com</p>
+                </div>
+                <div class="footer-col">
+                    <h4>快速連結</h4>
+                    <ul>
+                        <li><a href="solutions.html">解決方案</a></li>
+                        <li><a href="products.html">產品展示</a></li>
+                        <li><a href="cases.html">客戶案例</a></li>
+                        <li><a href="contact.html">聯繫我們</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 深圳普托雲聯技術有限公司 版權所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/roi-calculator.js"></script>
+</body>
+</html>

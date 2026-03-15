@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Putu CloudLink - Digital Cloud Factory Solutions for Injection Molding Industry</title>
+    <meta name="description" content="Shenzhen Putu CloudLink, specializing in digital solutions for injection molding industry, served 100+ factories, helping reduce 15%-30% waste and improve yield rate">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Putu CloudLink</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="solutions.html">Solutions</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cases.html">Cases</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="lang-switch">
+                <a href="../zh/index.html">简</a>
+                <a href="../tw/index.html">繁</a>
+                <a href="../en/index.html">EN</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Reduce Your Injection Molding Factory Waste by 30%</h1>
+            <p class="subtitle">Digital Cloud Factory Solutions Verified by 100+ Factories</p>
+            <div class="hero-cta">
+                <a href="#roi-calculator" class="btn btn-primary">Calculate Your Savings</a>
+                <a href="contact.html" class="btn btn-secondary">Request Demo</a>
+            </div>
+            <p class="trust-badge">✓ Served 100+ Injection Molding Factories &nbsp;&nbsp; ✓ Average Waste Reduction 27%</p>
+        </div>
+    </section>
+
+    <section class="pain-points">
+        <div class="container">
+            <h2>Does Your Factory Have These Problems?</h2>
+            <div class="pain-grid">
+                <div class="pain-card">
+                    <div class="pain-icon">🧠</div>
+                    <h3>Loss of Technical Expertise</h3>
+                    <p>Senior workers' experience is in their heads. When they leave, new workers must relearn through costly trial and error</p>
+                </div>
+                <div class="pain-card">
+                    <div class="pain-icon">📦</div>
+                    <h3>Production Black Box</h3>
+                    <p>You know you used 500 tons of material, but don't know which machine, which shift, or which product wasted it</p>
+                </div>
+                <div class="pain-card">
+                    <div class="pain-icon">⚔️</div>
+                    <h3>Blame Game</h3>
+                    <p>When defects occur, everyone blames materials, molds, or machines. No clear accountability</p>
+                </div>
+                <div class="pain-card">
+                    <div class="pain-icon">🏭</div>
+                    <h3>Weak Factory Image</h3>
+                    <p>Big customers want to see digital management capabilities. Handwritten records won't impress them</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="solutions">
+        <div class="container">
+            <h2>Our Solutions</h2>
+            <div class="solution-grid">
+                <div class="solution-card">
+                    <h3>👤 People - Performance Management</h3>
+                    <p>Who performs well? Use objective data instead of hearsay</p>
+                </div>
+                <div class="solution-card">
+                    <h3>🔧 Machine - Equipment Maintenance</h3>
+                    <p>Mandatory maintenance reminders for molds and machines. System restricts use if maintenance is overdue</p>
+                </div>
+                <div class="solution-card">
+                    <h3>📦 Material - Raw Material Control</h3>
+                    <p>Track every kilogram of material. Data monitoring and warehouse management make waste visible</p>
+                </div>
+                <div class="solution-card">
+                    <h3>📋 Method - SOP/Process Parameters</h3>
+                    <p>Automatic alerts or machine lock when parameters deviate. Self-learning process optimization</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="roi-calculator" class="roi-calculator">
+        <div class="container">
+            <h2>Calculate Your Factory's Potential Savings</h2>
+            <div class="calculator">
+                <div class="calc-inputs">
+                    <div class="input-group">
+                        <label>Number of Machines</label>
+                        <input type="number" id="machine-count" value="20" min="1">
+                    </div>
+                    <div class="input-group">
+                        <label>Monthly Material Usage (tons)</label>
+                        <input type="number" id="material-usage" value="100" min="1">
+                    </div>
+                    <div class="input-group">
+                        <label>Current Yield Rate (%)</label>
+                        <input type="number" id="yield-rate" value="95" min="1" max="100">
+                    </div>
+                    <div class="input-group">
+                        <label>Material Price (CNY/ton)</label>
+                        <input type="number" id="material-price" value="15000" min="1">
+                    </div>
+                </div>
+                <button class="btn btn-primary" onclick="calculateROI()">Calculate Now</button>
+                <div id="roi-result" class="roi-result" style="display:none;">
+                    <h3>Estimated Results</h3>
+                    <div class="result-grid">
+                        <div class="result-item">
+                            <div class="result-value" id="waste-reduction">¥0</div>
+                            <div class="result-label">Monthly Waste Savings</div>
+                        </div>
+                        <div class="result-item">
+                            <div class="result-value" id="yield-improvement">0%</div>
+                            <div class="result-label">Yield Rate Improvement</div>
+                        </div>
+                        <div class="result-item">
+                            <div class="result-value" id="payback-period">0 months</div>
+                            <div class="result-label">Payback Period</div>
+                        </div>
+                    </div>
+                    <p class="result-note">* Based on actual data from 100+ factories. Actual results may vary.</p>
+                    <a href="contact.html" class="btn btn-secondary">Get Detailed Proposal</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cases">
+        <div class="container">
+            <h2>Customer Cases</h2>
+            <div class="case-grid">
+                <div class="case-card">
+                    <h3>Dongguan Tangxia · Plastic Electronics</h3>
+                    <p class="case-scale">Scale: 33 Machines (100T-470T)</p>
+                    <p class="case-result">✓ Waste Reduced 27% (~¥20,000/month)</p>
+                    <p class="case-result">✓ Yield Rate Improved 2%</p>
+                </div>
+                <div class="case-card">
+                    <h3>Huizhou Danshui · Plastic Electronics</h3>
+                    <p class="case-scale">Scale: 10 Machines (900T-2100T)</p>
+                    <p class="case-result">✓ Waste Reduced 28% (~¥8,000/month)</p>
+                    <p class="case-result">✓ Yield Rate Improved 1%</p>
+                </div>
+            </div>
+            <a href="cases.html" class="btn btn-secondary">View More Cases</a>
+        </div>
+    </section>
+
+    <section class="value-props">
+        <div class="container">
+            <h2>Why Choose Putu CloudLink</h2>
+            <div class="value-grid">
+                <div class="value-item">
+                    <div class="value-num">15-30%</div>
+                    <div class="value-desc">Factory Waste Reduction</div>
+                </div>
+                <div class="value-item">
+                    <div class="value-num">50%</div>
+                    <div class="value-desc">Trial Cost Reduction</div>
+                </div>
+                <div class="value-item">
+                    <div class="value-num">100+</div>
+                    <div class="value-desc">Factories Served</div>
+                </div>
+                <div class="value-item">
+                    <div class="value-num">99%</div>
+                    <div class="value-desc">Machine Brand Compatibility</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Start Your Digital Transformation?</h2>
+            <p>Contact us for a customized solution and quote</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-primary">Contact Us Now</a>
+                <a href="tel:13510986820" class="btn btn-secondary">📞 135-1098-6820</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Putu CloudLink</h4>
+                    <p>The Most Practical Digital Service Platform for Injection Molding Industry</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p>Shenzhen: 2/F, Building 75, Dayun Software Town, Longgang District</p>
+                    <p>Dongguan: 6/F, Zhonghui Shiyin Building, Songshan Lake</p>
+                    <p>Phone: 0755-89589212 / 135-1098-6820</p>
+                    <p>Email: zhuang.luo@tjskynet.com</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="solutions.html">Solutions</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="cases.html">Cases</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Shenzhen Putu CloudLink Technology Co., Ltd. All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/roi-calculator.js"></script>
+</body>
+</html>
