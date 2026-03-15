@@ -2022,6 +2022,47 @@ a {
     transform: translateX(5px);
 }
 
+/* 解决方案顶部导航横向布局 */
+.sol-nav-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.sol-nav-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 2px solid transparent;
+}
+
+.sol-nav-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-color);
+}
+
+.sol-nav-icon {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.sol-nav-card h3 {
+    font-size: 18px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.sol-nav-card p {
+    font-size: 14px;
+    color: var(--text-light);
+}
+
 /* 首页优势横向布局 */
 .advantage-grid {
     display: grid;
