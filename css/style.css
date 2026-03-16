@@ -1612,17 +1612,16 @@ a {
     box-sizing: border-box !important;
 }
 
-/* 箭头容器 - 垂直居中 */
+/* 箭头容器 - 填充红框区域 */
 .case-arrow {
-    flex: 0 0 30% !important;
-    max-width: 30% !important;
+    flex: 1 !important;
+    max-width: none !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    padding: 0 !important;
+    padding: 0 20px !important;
     box-sizing: border-box !important;
-    position: relative !important;
-    height: 100px !important;
+    min-width: 200px !important;
 }
 
 /* 蓝色渐变箭头（使用用户提供的图片） */
@@ -1630,7 +1629,8 @@ a {
     content: "" !important;
     display: block !important;
     width: 100% !important;
-    height: 100px !important;
+    max-width: 300px !important;
+    height: 80px !important;
     background-image: url("../images/arrow-blue-new.png") !important;
     background-repeat: no-repeat !important;
     background-position: center !important;
