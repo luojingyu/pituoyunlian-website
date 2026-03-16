@@ -1619,25 +1619,25 @@ a {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    padding: 20px !important;
+    padding: 40px 20px !important;
     box-sizing: border-box !important;
     position: relative !important;
+    height: 180px !important;
 }
 
-/* 渐变箭头（线条 + 箭头一体） */
+/* 渐变箭头（宽大箭头样式） */
 .case-arrow::before {
-    content: "──────────────────→" !important;
-    font-size: 48px !important;
-    font-weight: bold !important;
-    font-family: "Arial", sans-serif !important;
-    background: linear-gradient(to right, #ff6b6b 0%, #4ecdc4 100%) !important;
-    -webkit-background-clip: text !important;
-    -webkit-text-fill-color: transparent !important;
-    background-clip: text !important;
+    content: "" !important;
     display: block !important;
     width: 100% !important;
-    text-align: center !important;
-    letter-spacing: -2px !important;
+    height: 80px !important;
+    background: linear-gradient(to right, 
+        rgba(255, 107, 107, 0.1) 0%, 
+        rgba(255, 107, 107, 0.6) 30%,
+        rgba(78, 205, 196, 0.8) 70%,
+        rgba(78, 205, 196, 1) 100%) !important;
+    clip-path: polygon(0% 40%, 70% 40%, 70% 0%, 100% 50%, 70% 100%, 70% 60%, 0% 60%) !important;
+    position: relative !important;
 }
 
 .case-solution {
