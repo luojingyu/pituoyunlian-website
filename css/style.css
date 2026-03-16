@@ -1899,9 +1899,32 @@ a {
 }
 
 /* 实施效果横向网格（参考核心功能模块）⭐ 占满全宽，高度减半 */
+.case-card-large {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+.case-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 30px !important;
+}
+
+.case-right {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 20px !important;
+}
+
 .case-results {
     width: 100% !important;
     max-width: 100% !important;
+    display: block !important;
+}
+
+/* 覆盖旧的.result-cards 样式 */
+.result-cards {
+    display: none !important;
 }
 
 .results-grid {
