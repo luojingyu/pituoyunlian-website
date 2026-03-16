@@ -1600,19 +1600,46 @@ a {
     display: flex !important;
     flex-wrap: wrap !important;
     justify-content: center !important;
-    gap: 20px !important;
+    align-items: flex-start !important;
+    gap: 10px !important;
+    padding: 20px 40px !important;
 }
 
 .case-challenges {
-    flex: 0 0 calc(45% - 10px) !important;
-    max-width: calc(45% - 10px) !important;
+    flex: 0 0 calc(40% - 10px) !important;
+    max-width: calc(40% - 10px) !important;
     padding: 20px !important;
     box-sizing: border-box !important;
 }
 
+/* 箭头容器 */
+.case-arrow {
+    flex: 0 0 10% !important;
+    max-width: 10% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 20px 0 !important;
+    box-sizing: border-box !important;
+}
+
+/* 渐变箭头 */
+.case-arrow::after {
+    content: "→" !important;
+    font-size: 48px !important;
+    font-weight: bold !important;
+    background: linear-gradient(to right, #ff6b6b, #4ecdc4) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+}
+
 .case-solution {
-    flex: 0 0 calc(45% - 10px) !important;
-    max-width: calc(45% - 10px) !important;
+    flex: 0 0 calc(40% - 10px) !important;
+    max-width: calc(40% - 10px) !important;
     padding: 20px !important;
     box-sizing: border-box !important;
 }
