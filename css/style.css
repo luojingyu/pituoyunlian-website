@@ -1595,10 +1595,10 @@ a {
     display: block !important;  /* 覆盖分列布局 */
 }
 
-/* 面临的挑战和解决方案并排居中显示（使用 flexbox） */
+/* 面临的挑战和解决方案并排显示 */
 .case-content {
     display: flex !important;
-    flex-wrap: wrap !important;
+    flex-wrap: nowrap !important;
     justify-content: center !important;
     align-items: flex-start !important;
     gap: 0 !important;
@@ -1606,41 +1606,40 @@ a {
 }
 
 .case-challenges {
-    flex: 0 0 35% !important;
-    max-width: 35% !important;
-    padding: 20px 40px 20px 20px !important;
+    flex: 0 0 30% !important;
+    max-width: 30% !important;
+    padding: 20px !important;
     box-sizing: border-box !important;
-    margin-left: 10% !important;
 }
 
-/* 箭头容器 - 填充红框区域 */
+/* 箭头容器 */
 .case-arrow-container {
-    flex: 1 !important;
-    max-width: none !important;
+    flex: 0 0 40% !important;
+    max-width: 40% !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    margin: 0 !important;
-    padding: 0 !important;
+    padding: 20px !important;
+    box-sizing: border-box !important;
 }
 
 .case-arrow-container::before {
     content: "" !important;
     display: block !important;
-    width: 200px !important;
+    width: 100% !important;
+    max-width: 300px !important;
     height: 150px !important;
-    background-image: url("../images/arrow-blue-new.png?v=20260316-4") !important;
+    background-image: url("../images/arrow-blue-new.png?v=20260316-5") !important;
     background-repeat: no-repeat !important;
     background-position: center !important;
     background-size: contain !important;
 }
 
 .case-solution {
-    flex: 0 0 35% !important;
-    max-width: 35% !important;
-    padding: 20px 20px 20px 40px !important;
+    flex: 0 0 30% !important;
+    max-width: 30% !important;
+    padding: 20px !important;
     box-sizing: border-box !important;
-    margin-right: 10% !important;
 }
 
 /* 实施效果独占一行 */
