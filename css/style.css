@@ -1873,7 +1873,6 @@ a {
         grid-template-columns: 1fr;
     }
 
-    .case-content {
         grid-template-columns: 1fr;
     }
 
@@ -1959,7 +1958,6 @@ a {
     max-width: 100% !important;
     margin: 0 !important;
 }
-
 .case-content {
     width: 100% !important;
     max-width: 100% !important;
