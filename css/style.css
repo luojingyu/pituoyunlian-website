@@ -1601,32 +1601,43 @@ a {
     flex-wrap: wrap !important;
     justify-content: center !important;
     align-items: flex-start !important;
-    gap: 10px !important;
+    gap: 0 !important;
     padding: 20px 40px !important;
 }
 
 .case-challenges {
-    flex: 0 0 calc(40% - 10px) !important;
-    max-width: calc(40% - 10px) !important;
+    flex: 0 0 35% !important;
+    max-width: 35% !important;
     padding: 20px !important;
     box-sizing: border-box !important;
 }
 
 /* 箭头容器 */
 .case-arrow {
-    flex: 0 0 10% !important;
-    max-width: 10% !important;
+    flex: 0 0 30% !important;
+    max-width: 30% !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    padding: 20px 0 !important;
+    padding: 40px 20px !important;
     box-sizing: border-box !important;
+    height: 200px !important;
 }
 
 /* 渐变箭头 */
+.case-arrow::before {
+    content: "" !important;
+    display: block !important;
+    width: 100% !important;
+    height: 4px !important;
+    background: linear-gradient(to right, #ff6b6b 0%, #4ecdc4 100%) !important;
+    position: relative !important;
+    top: -10px !important;
+}
+
 .case-arrow::after {
     content: "→" !important;
-    font-size: 48px !important;
+    font-size: 72px !important;
     font-weight: bold !important;
     background: linear-gradient(to right, #ff6b6b, #4ecdc4) !important;
     -webkit-background-clip: text !important;
@@ -1635,11 +1646,13 @@ a {
     display: block !important;
     width: 100% !important;
     text-align: center !important;
+    position: relative !important;
+    top: -30px !important;
 }
 
 .case-solution {
-    flex: 0 0 calc(40% - 10px) !important;
-    max-width: calc(40% - 10px) !important;
+    flex: 0 0 35% !important;
+    max-width: 35% !important;
     padding: 20px !important;
     box-sizing: border-box !important;
 }
