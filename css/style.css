@@ -1592,9 +1592,7 @@ a {
 }
 
 .case-content {
-    display: grid;
-    grid-template-columns: 350px 1fr;
-    gap: 0;
+    display: block !important;  /* 覆盖分列布局 */
 }
 
 .case-left {
