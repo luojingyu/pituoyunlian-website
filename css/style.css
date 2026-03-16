@@ -1619,9 +1619,10 @@ a {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    padding: 0 20px !important;
+    padding: 0 !important;
     box-sizing: border-box !important;
-    min-width: 200px !important;
+    min-width: 150px !important;
+    height: 200px !important;
 }
 
 /* 蓝色渐变箭头（使用用户提供的图片） */
@@ -1629,12 +1630,11 @@ a {
     content: "" !important;
     display: block !important;
     width: 100% !important;
-    max-width: 300px !important;
-    height: 80px !important;
+    height: 100% !important;
     background-image: url("../images/arrow-blue-new.png") !important;
     background-repeat: no-repeat !important;
     background-position: center !important;
-    background-size: contain !important;
+    background-size: 100% 100% !important;
 }
 
 .case-solution {
