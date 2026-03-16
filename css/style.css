@@ -1612,8 +1612,8 @@ a {
     box-sizing: border-box !important;
 }
 
-/* 箭头容器 - 填充红框区域 */
-.case-arrow {
+/* 箭头容器 - 填充红框区域 (v20260316-1855) */
+.case-arrow-container {
     flex: 1 !important;
     max-width: none !important;
     display: flex !important;
@@ -1622,16 +1622,15 @@ a {
     padding: 0 !important;
     box-sizing: border-box !important;
     min-width: 150px !important;
-    height: 200px !important;
+    height: 250px !important;
 }
 
-/* 蓝色渐变箭头（使用用户提供的图片） */
-.case-arrow::before {
+.case-arrow-container::before {
     content: "" !important;
     display: block !important;
     width: 100% !important;
     height: 100% !important;
-    background-image: url("../images/arrow-blue-new.png") !important;
+    background-image: url("../images/arrow-blue-new.png?v=20260316") !important;
     background-repeat: no-repeat !important;
     background-position: center !important;
     background-size: 100% 100% !important;
