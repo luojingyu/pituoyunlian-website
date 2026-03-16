@@ -1619,35 +1619,25 @@ a {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    padding: 40px 20px !important;
+    padding: 20px !important;
     box-sizing: border-box !important;
-    height: 200px !important;
-}
-
-/* 渐变箭头 */
-.case-arrow::before {
-    content: "" !important;
-    display: block !important;
-    width: 100% !important;
-    height: 4px !important;
-    background: linear-gradient(to right, #ff6b6b 0%, #4ecdc4 100%) !important;
     position: relative !important;
-    top: -10px !important;
 }
 
-.case-arrow::after {
-    content: "→" !important;
-    font-size: 72px !important;
+/* 渐变箭头（线条 + 箭头一体） */
+.case-arrow::before {
+    content: "──────────────────→" !important;
+    font-size: 48px !important;
     font-weight: bold !important;
-    background: linear-gradient(to right, #ff6b6b, #4ecdc4) !important;
+    font-family: "Arial", sans-serif !important;
+    background: linear-gradient(to right, #ff6b6b 0%, #4ecdc4 100%) !important;
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
     background-clip: text !important;
     display: block !important;
     width: 100% !important;
     text-align: center !important;
-    position: relative !important;
-    top: -30px !important;
+    letter-spacing: -2px !important;
 }
 
 .case-solution {
