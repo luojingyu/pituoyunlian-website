@@ -1595,7 +1595,24 @@ a {
     display: block !important;  /* 覆盖分列布局 */
 }
 
-.case-challenges, .case-solution {
+/* 面临的挑战和解决方案并排显示 */
+.case-challenges {
+    float: left !important;
+    width: 50% !important;
+    padding-right: 20px !important;
+    box-sizing: border-box !important;
+}
+
+.case-solution {
+    float: left !important;
+    width: 50% !important;
+    padding-left: 20px !important;
+    box-sizing: border-box !important;
+}
+
+/* 清除浮动 */
+.case-results {
+    clear: both !important;
     width: 100% !important;
     max-width: 100% !important;
 }
