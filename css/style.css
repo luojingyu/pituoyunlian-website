@@ -1625,13 +1625,13 @@ a {
     height: 100px !important;
 }
 
-/* 蓝色汇聚箭头（使用用户提供的图片） */
+/* 蓝色渐变箭头（使用用户提供的图片） */
 .case-arrow::before {
     content: "" !important;
     display: block !important;
     width: 100% !important;
-    height: 80px !important;
-    background-image: url("../images/arrow-blue.png") !important;
+    height: 100px !important;
+    background-image: url("../images/arrow-blue-new.png") !important;
     background-repeat: no-repeat !important;
     background-position: center !important;
     background-size: contain !important;
