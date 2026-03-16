@@ -1595,6 +1595,11 @@ a {
     display: block !important;  /* 覆盖分列布局 */
 }
 
+.case-challenges, .case-solution {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
 .case-left {
     background: var(--bg-light);
     padding: 40px;
