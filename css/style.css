@@ -1625,13 +1625,13 @@ a {
     height: 100px !important;
 }
 
-/* 渐变箭头（圆滑边缘 SVG） */
+/* 渐变箭头（使用用户提供的图片） */
 .case-arrow::before {
     content: "" !important;
     display: block !important;
     width: 100% !important;
-    height: 50px !important;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 50'%3E%3Cdefs%3E%3ClinearGradient id='arrowGrad' x1='0%25' y1='0%25' x2='100%25' y2='0%25'%3E%3Cstop offset='0%25' style='stop-color:%23ff6b6b;stop-opacity:0.2' /%3E%3Cstop offset='50%25' style='stop-color:%23ff6b6b;stop-opacity:0.6' /%3E%3Cstop offset='100%25' style='stop-color:%234ecdc4;stop-opacity:1' /%3E%3C/linearGradient%3E%3Cfilter id='blur'%3E%3CfeGaussianBlur in='SourceGraphic' stdDeviation='1' /%3E%3C/filter%3E%3C/defs%3E%3Cpath d='M5,15 Q5,10 10,10 L130,10 Q140,10 140,15 L140,8 Q140,5 143,8 L175,23 Q180,25 175,27 L143,42 Q140,45 140,42 L140,35 Q140,40 130,40 L10,40 Q5,40 5,35 Q0,35 0,25 Q0,15 5,15 Z' fill='url(%23arrowGrad)' filter='url(%23blur)'/%3E%3C/svg%3E") !important;
+    height: 60px !important;
+    background-image: url("../images/arrow-gradient.png") !important;
     background-repeat: no-repeat !important;
     background-position: center !important;
     background-size: contain !important;
