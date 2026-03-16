@@ -1899,15 +1899,22 @@ a {
 }
 
 /* 实施效果横向网格（参考核心功能模块）⭐ 占满全宽，高度减半 */
+
+/* 覆盖容器宽度限制 */
+.container {
+    max-width: 100% !important;
+}
+
 .case-card-large {
     width: 100% !important;
     max-width: 100% !important;
+    margin: 0 !important;
 }
 
 .case-content {
     width: 100% !important;
     max-width: 100% !important;
-    padding: 30px !important;
+    padding: 20px 40px !important;
 }
 
 .case-right {
@@ -1920,6 +1927,7 @@ a {
     width: 100% !important;
     max-width: 100% !important;
     display: block !important;
+    margin: 15px 0 !important;
 }
 
 /* 覆盖旧的.result-cards 样式 */
@@ -1930,14 +1938,41 @@ a {
 .results-grid {
     display: grid !important;
     grid-template-columns: repeat(5, 1fr) !important;
-    gap: 12px !important;
-    margin: 10px 0 !important;
-    padding: 12px !important;
+    gap: 15px !important;
+    margin: 15px 0 !important;
+    padding: 15px !important;
     background: var(--bg-light) !important;
     border-radius: 8px !important;
-    width: 100% !important;
+    width: calc(100% + 40px) !important;
     max-width: none !important;
+    margin-left: -20px !important;
     box-sizing: border-box !important;
+}
+
+.result-item {
+    text-align: center !important;
+    padding: 15px 10px !important;
+    background: white !important;
+    border-radius: 6px !important;
+    box-shadow: var(--shadow) !important;
+    transition: transform 0.3s !important;
+    min-width: 0 !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+.result-number {
+    font-size: 28px !important;
+    font-weight: bold !important;
+    color: var(--primary-color) !important;
+    margin-bottom: 5px !important;
+    line-height: 1.2 !important;
+}
+
+.result-label {
+    font-size: 13px !important;
+    color: var(--text-light) !important;
+    line-height: 1.4 !important;
 }
 
 .result-item {
