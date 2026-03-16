@@ -1608,17 +1608,18 @@ a {
 .case-challenges {
     flex: 0 0 35% !important;
     max-width: 35% !important;
-    padding: 20px !important;
+    padding: 20px 40px 20px 20px !important;
     box-sizing: border-box !important;
+    margin-left: 10% !important;
 }
 
 /* 箭头容器 - 填充红框区域 */
 .case-arrow-container {
     flex: 1 !important;
     max-width: none !important;
-    display: block !important;
-    width: 100% !important;
-    height: 200px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
     margin: 0 !important;
     padding: 0 !important;
 }
@@ -1626,19 +1627,20 @@ a {
 .case-arrow-container::before {
     content: "" !important;
     display: block !important;
-    width: 100% !important;
-    height: 200px !important;
-    background-image: url("../images/arrow-blue-new.png?v=20260316-3") !important;
+    width: 200px !important;
+    height: 150px !important;
+    background-image: url("../images/arrow-blue-new.png?v=20260316-4") !important;
     background-repeat: no-repeat !important;
     background-position: center !important;
-    background-size: 100% 100% !important;
+    background-size: contain !important;
 }
 
 .case-solution {
     flex: 0 0 35% !important;
     max-width: 35% !important;
-    padding: 20px !important;
+    padding: 20px 20px 20px 40px !important;
     box-sizing: border-box !important;
+    margin-right: 10% !important;
 }
 
 /* 实施效果独占一行 */
