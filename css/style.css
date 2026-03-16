@@ -1898,28 +1898,35 @@ a {
     margin: 30px 0;
 }
 
-/* 实施效果横向网格（参考核心功能模块）⭐ 宽度自适应，高度减半 */
-.results-grid {
-    display: grid !important;
-    grid-template-columns: repeat(5, 1fr) !important;
-    gap: 15px !important;
-    margin: 15px 0 !important;
-    padding: 15px !important;
-    background: var(--bg-light) !important;
-    border-radius: 8px !important;
+/* 实施效果横向网格（参考核心功能模块）⭐ 占满全宽，高度减半 */
+.case-results {
     width: 100% !important;
     max-width: 100% !important;
 }
 
+.results-grid {
+    display: grid !important;
+    grid-template-columns: repeat(5, 1fr) !important;
+    gap: 12px !important;
+    margin: 10px 0 !important;
+    padding: 12px !important;
+    background: var(--bg-light) !important;
+    border-radius: 8px !important;
+    width: 100% !important;
+    max-width: none !important;
+    box-sizing: border-box !important;
+}
+
 .result-item {
     text-align: center !important;
-    padding: 10px 5px !important;
+    padding: 12px 8px !important;
     background: white !important;
     border-radius: 6px !important;
     box-shadow: var(--shadow) !important;
     transition: transform 0.3s !important;
     min-width: 0 !important;
     width: 100% !important;
+    box-sizing: border-box !important;
 }
 
 .result-number {
