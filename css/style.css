@@ -990,6 +990,23 @@ a {
     gap: 60px;
 }
 
+.wechat-qr {
+    width: 180px !important;
+    height: 180px !important;
+    margin: 10px auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.wechat-qr img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important;
+}
+
 .contact-info h2, .contact-form-wrapper h2 {
     font-size: 28px;
     margin-bottom: 30px;
