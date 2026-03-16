@@ -361,12 +361,6 @@ a {
     margin-bottom: 20px;
 }
 
-.result-item {
-    text-align: center;
-    padding: 20px;
-    background: var(--bg-light);
-    border-radius: 12px;
-}
 
 .result-value {
     font-size: 32px;
@@ -1929,11 +1923,6 @@ a {
     transition: transform 0.3s !important;
 }
 
-.result-item {
-    text-align: center;
-    padding: 15px;
-    background: white;
-    border-radius: 8px;
     box-shadow: var(--shadow);
     transition: transform 0.3s;
 }
