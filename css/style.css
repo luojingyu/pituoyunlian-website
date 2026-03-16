@@ -1612,30 +1612,28 @@ a {
     box-sizing: border-box !important;
 }
 
-/* 箭头容器 - 填充红框区域 (v20260316-1905) */
+/* 箭头容器 - 填充红框区域 (v20260316-1855) */
 .case-arrow-container {
     flex: 1 !important;
     max-width: none !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    padding: 0 10px !important;
+    padding: 0 !important;
     box-sizing: border-box !important;
-    min-width: 100px !important;
-    max-width: 400px !important;
-    height: 180px !important;
-    margin: 20px 0 !important;
+    min-width: 150px !important;
+    height: 250px !important;
 }
 
 .case-arrow-container::before {
     content: "" !important;
     display: block !important;
     width: 100% !important;
-    height: 120px !important;
-    background-image: url("../images/arrow-blue-new.png?v=20260316-2") !important;
+    height: 100% !important;
+    background-image: url("../images/arrow-blue-new.png?v=20260316") !important;
     background-repeat: no-repeat !important;
     background-position: center !important;
-    background-size: contain !important;
+    background-size: 100% 100% !important;
 }
 
 .case-solution {
