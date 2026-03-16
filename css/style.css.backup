@@ -1591,6 +1591,9 @@ a {
     font-size: 14px;
 }
 
+.case-content {
+    display: block !important;  /* 覆盖分列布局 */
+}
 
 /* 面临的挑战和解决方案并排显示 */
 .case-content {
