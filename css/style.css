@@ -369,10 +369,6 @@ a {
     margin-bottom: 10px;
 }
 
-.result-label {
-    font-size: 14px;
-    color: var(--text-light);
-}
 
 .result-note {
     text-align: center;
@@ -1949,12 +1945,6 @@ a {
     box-shadow: var(--shadow-lg);
 }
 
-.result-number {
-    font-size: 32px;
-    font-weight: bold;
-    color: var(--primary-color);
-    margin-bottom: 8px;
-}
 
 .result-label {
     font-size: 14px;
@@ -1962,10 +1952,6 @@ a {
 }
 
 .module-card-h {
-    background: white;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: var(--shadow);
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
     border: 1px solid var(--border-color);
