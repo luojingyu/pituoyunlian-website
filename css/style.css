@@ -990,10 +990,45 @@ a {
     gap: 60px;
 }
 
+.contact-card {
+    text-align: center;
+}
+
+.contact-avatar {
+    font-size: 64px;
+    margin-bottom: 15px;
+}
+
+.contact-card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.contact-phone {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.contact-phone a {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.wechat-section {
+    margin-top: 20px;
+}
+
+.wechat-tip {
+    font-size: 14px;
+    color: var(--text-light);
+    margin-bottom: 10px;
+}
+
 .wechat-qr {
-    width: 180px !important;
-    height: 180px !important;
-    margin: 10px auto !important;
+    width: 160px !important;
+    height: 160px !important;
+    margin: 15px auto !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
@@ -1005,6 +1040,12 @@ a {
     object-fit: contain !important;
     border-radius: 8px !important;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important;
+}
+
+.wechat-id {
+    font-size: 14px;
+    color: var(--text-light);
+    margin-top: 10px;
 }
 
 .contact-info h2, .contact-form-wrapper h2 {
@@ -1083,6 +1124,60 @@ a {
     color: var(--text-light);
 }
 
+/* 在线咨询表单 - 宽度减半并居中 */
+.online-contact {
+    padding: 80px 0;
+    background: var(--bg-light);
+}
+
+.contact-form-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.form-left {
+    flex: 1;
+    max-width: 500px;
+}
+
+.form-right {
+    flex: 1;
+    max-width: 300px;
+}
+
+.contact-info-box {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 100px;
+}
+
+.contact-info-box h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.info-list {
+    list-style: none;
+}
+
+.info-list li {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 14px;
+    color: var(--text-light);
+}
+
+.info-list li:last-child {
+    border-bottom: none;
+}
+
 .map-section {
     padding: 60px 0;
     background: var(--bg-light);
@@ -1112,6 +1207,25 @@ a {
 .map-note {
     color: var(--text-light);
     font-size: 14px;
+}
+
+/* 公司地址地图 - 全宽显示 */
+.company-location {
+    padding: 60px 0;
+    background: var(--bg-light);
+}
+
+.location-map-full {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.location-map-full iframe {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: var(--shadow-lg);
 }
 
 /* 5 维度概览 */
