@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>夜班管理难题：MES 系统如何让老板睡个安稳觉？ - 新闻中心 - 普托云联</title>
+    <meta name="description" content="夜班生产没人管？工人偷偷改参数？MES 系统通过实时数据采集、工艺参数锁定、异常自动报警，让夜班生产透明可控">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .article-content { max-width: 800px; margin: 0 auto; padding: 40px 20px; line-height: 1.8; font-size: 16px; }
+        .article-content h2 { font-size: 28px; margin: 40px 0 20px; color: var(--primary-color); }
+        .article-content h3 { font-size: 22px; margin: 30px 0 15px; color: var(--text-color); }
+        .article-content p { margin-bottom: 20px; text-align: justify; }
+        .article-content ul, .article-content ol { margin: 20px 0; padding-left: 30px; }
+        .article-content li { margin-bottom: 12px; }
+        .article-meta { background: var(--bg-light); padding: 20px; border-radius: 8px; margin-bottom: 30px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 15px; }
+        .article-meta span { color: var(--text-light); font-size: 14px; }
+        .article-tag { display: inline-block; padding: 5px 15px; background: var(--primary-color); color: white; border-radius: 20px; font-size: 13px; font-weight: 500; }
+        .highlight-box { background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); border-left: 4px solid var(--primary-color); padding: 25px; margin: 30px 0; border-radius: 8px; }
+        .highlight-box h4 { color: var(--primary-color); margin-bottom: 15px; font-size: 18px; }
+        .back-link { display: inline-block; padding: 12px 25px; background: var(--primary-color); color: white; border-radius: 8px; margin-bottom: 30px; transition: background 0.3s; text-decoration: none; }
+        .back-link:hover { background: var(--primary-dark); }
+        .quote-box { background: #fafafa; border-left: 4px solid #faad14; padding: 20px; margin: 20px 0; font-style: italic; }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px; margin: 30px 0; }
+        .stat-card { background: #f5f5f5; padding: 20px; border-radius: 8px; text-align: center; }
+        .stat-card .number { font-size: 32px; font-weight: bold; color: var(--primary-color); }
+        .stat-card .label { font-size: 14px; color: #666; margin-top: 5px; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">普托云联</div>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="solutions.html">解决方案</a></li>
+                <li><a href="products.html">产品中心</a></li>
+                <li><a href="cases.html">客户案例</a></li>
+                <li><a href="news.html">新闻中心</a></li>
+                <li><a href="about.html">关于我们</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+            </ul>
+            <div class="lang-switch">
+                <a href="index.html">简</a>
+                <a href="../tw/index.html">繁</a>
+                <a href="../en/index.html">EN</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>行业干货</h1>
+            <p>洞察行业趋势 · 分享技术干货</p>
+        </div>
+    </section>
+
+    <div class="article-content">
+        <a href="news.html" class="back-link">← 返回新闻中心</a>
+        
+        <div class="article-meta">
+            <span class="article-tag">行业干货</span>
+            <span>📅 2026-04-17</span>
+            <span>👁 阅读中</span>
+        </div>
+
+        <h1>夜班管理难题：MES 系统如何让老板睡个安稳觉？</h1>
+
+        <p>注塑行业有个共识：<strong>夜班生产，老板最操心。</strong></p>
+
+        <p>白天有主管盯着，有品管巡查，有问题当场解决。但夜班呢？老板在家睡觉，主管回家休息，车间里只有几个工人。这个时候，就是"山高皇帝远"了。</p>
+
+        <h2>🔴 夜班的三大顽疾</h2>
+
+        <h3>1. 参数被偷偷改</h3>
+        <p>为了赶产量，夜班工人经常偷偷把注射压力调大、冷却时间调短。机器跑得快了，产量上去了，但产品质量呢？料头多了、飞边多了、次品率飙升。</p>
+        <p>更可怕的是，这些问题要到第二天白天才会被发现，但已经生产了几千件次品了。</p>
+
+        <h3>2. 生产进度不透明</h3>
+        <p>老板问："昨晚 3 号机跑了多少？"班长说："大概...可能...应该..."——没人说得清。</p>
+        <p>没有实时数据采集，夜班生产就像黑箱。老板只能等第二天的报表，但那时候黄花菜都凉了。</p>
+
+        <h3>3. 出了问题找不到人</h3>
+        <p>机器报警了，工人不会处理，也不知道该打给谁。等天亮才发现，机器停了 4 个小时，订单交期延误了。</p>
+
+        <h2>✅ MES 系统的解决方案</h2>
+
+        <h3>1. 工艺参数锁定，偷改立即报警</h3>
+        <ul>
+            <li>标准工艺参数录入系统，偏差超过设定范围自动报警</li>
+            <li>参数修改留痕，谁改的、改了什么、什么时候改的一清二楚</li>
+            <li>报警信息实时推送给老板手机，想瞒都瞒不住</li>
+        </ul>
+
+        <div class="quote-box">
+            <p>"以前夜班工人改参数，第二天我才知道。现在改完 5 分钟内我手机就响了，想偷偷摸摸？没门！"——某注塑厂老板</p>
+        </div>
+
+        <h3>2. 实时数据采集，老板手机看全厂</h3>
+        <ul>
+            <li>每台机器的产量、周期、电耗实时采集，上传到云端</li>
+            <li>老板打开手机就能看全厂状态，不用等报表</li>
+            <li>订单进度自动计算，交期风险提前预警</li>
+        </ul>
+
+        <h3>3. 异常自动报警，停机立即通知</h3>
+        <ul>
+            <li>机器停机超过 15 分钟，系统自动发送报警通知</li>
+            <li>报警信息包含机台号、停机原因、持续时间</li>
+            <li>值班人员收到通知后必须确认处理，否则升级通知主管</li>
+        </ul>
+
+        <h2>📊 上线效果</h2>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="number">-90%</div>
+                <div class="label">夜班异常减少</div>
+            </div>
+            <div class="stat-card">
+                <div class="number">-75%</div>
+                <div class="label">参数违规减少</div>
+            </div>
+            <div class="stat-card">
+                <div class="number">+25%</div>
+                <div class="label">夜班产能提升</div>
+            </div>
+            <div class="stat-card">
+                <div class="number">100%</div>
+                <div class="label">异常响应率</div>
+            </div>
+        </div>
+
+        <div class="highlight-box">
+            <h4>💡 核心逻辑</h4>
+            <p>MES 系统解决夜班管理问题，核心就一句话：<strong>把"人管人"变成"系统管人"。</strong></p>
+            <p>系统不睡觉、不偷懒、不讲人情，它只会如实记录、按时报警。工人知道系统盯着，自然不敢乱来。老板知道系统盯着，自然睡得安稳。</p>
+        </div>
+
+        <h2>🎯 总结</h2>
+        <p>夜班管理是注塑行业的共性难题。靠人盯人，成本高、效果差。靠 MES 系统，实时采集、自动报警、全程留痕——老板终于能睡个安稳觉了。</p>
+
+        <p><strong>如果您也有夜班管理难题，欢迎联系我们，免费上门诊断！</strong></p>
+
+        <p style="text-align: center; color: #666; margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee;">
+            <em>普托云联 · 数字制造·数字物流·AI 智能服务</em><br>
+            <em>已服务 350+ 家注塑工厂</em>
+        </p>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 深圳市普托云联技术有限公司 版权所有</p>
+            <p>粤 ICP 备 1606060739 号 -1</p>
+        </div>
+    </footer>
+</body>
+</html>
