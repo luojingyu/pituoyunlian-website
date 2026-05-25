@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>老板一句话插单，车间主任跑断腿排一天——注塑厂的排产噩梦 | 普托云联</title>
+<meta name="description" content="车间主任拿着白板排了一下午，老板一个电话插单，全部推翻重来。MES甘特图排产系统，拖拽排产、冲突自动检测、紧急插单一键搞定。">
+<meta name="keywords" content="排产计划,甘特图,注塑厂管理,MES系统,生产排程,拖拽排产,紧急插单,普托云联">
+<link rel="stylesheet" href="../css/style.css">
+<style>
+.article-body { max-width: 720px; margin: 0 auto; line-height: 1.9; font-size: 17px; color: #333; }
+.article-body p { margin-bottom: 20px; }
+.article-body .highlight { color: #c00; font-weight: 600; font-size: 20px; }
+.article-body .quote-box { background: #f5f7fa; border-left: 4px solid #1a73e8; padding: 20px; margin: 24px 0; border-radius: 0 6px 6px 0; }
+.article-body .cost-table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+.article-body .cost-table th, .article-body .cost-table td { padding: 12px 16px; border-bottom: 1px solid #eee; text-align: left; }
+.article-body .cost-table th { background: #f0f7ff; font-weight: 600; }
+.article-body .cost-table td:last-child { text-align: right; font-weight: 600; color: #1a73e8; }
+.article-body .compare-table { width: 100%; border-collapse: collapse; margin: 24px 0; }
+.article-body .compare-table th, .article-body .compare-table td { padding: 10px 14px; border: 1px solid #ddd; text-align: center; }
+.article-body .compare-table th { background: #1a73e8; color: #fff; }
+.article-body .compare-table tr:nth-child(even) { background: #f9f9f9; }
+.article-body .scenario-box { background: #fff8e1; border: 1px solid #ffe082; padding: 24px; margin: 24px 0; border-radius: 8px; }
+.article-body .scenario-box h4 { color: #f57f17; margin-top: 0; }
+.article-body .stat-highlight { display: inline-block; background: #1a73e8; color: #fff; padding: 2px 10px; border-radius: 4px; font-weight: 600; }
+.article-body .color-demo { display: flex; gap: 12px; flex-wrap: wrap; margin: 16px 0; }
+.article-body .color-item { padding: 8px 16px; border-radius: 6px; font-size: 14px; font-weight: 600; }
+.article-body .color-green { background: #e8f5e9; color: #2e7d32; border: 2px solid #4caf50; }
+.article-body .color-orange { background: #fff3e0; color: #e65100; border: 2px solid #ff9800; }
+.article-body .color-red { background: #ffebee; color: #c62828; border: 2px solid #f44336; }
+.article-body .color-blue { background: #e3f2fd; color: #1565c0; border: 2px solid #2196f3; }
+</style>
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-content">
+        <a href="index.html" class="logo">普托云联</a>
+        <nav class="main-nav">
+            <a href="index.html">首页</a>
+            <a href="solutions.html">解决方案</a>
+            <a href="products.html">产品</a>
+            <a href="news.html" class="active">新闻</a>
+            <a href="about.html">关于</a>
+            <a href="contact.html">联系</a>
+        </nav>
+    </div>
+</header>
+
+<main class="article-page">
+    <div class="container">
+        <a href="news.html" class="back-link">← 返回新闻列表</a>
+        <article class="article-content">
+            <h1 class="article-title">老板一句话插单，车间主任跑断腿排一天——注塑厂的排产噩梦</h1>
+            <div class="article-meta">
+                <span class="article-tag industry-tag">行业干货</span>
+                <span class="article-date">2026-05-18</span>
+            </div>
+
+            <div class="article-body">
+                <p>注塑厂排产，大概是全中国最"随性"的管理环节。</p>
+
+                <p>不是贬义——是真的<strong>随性</strong>。</p>
+
+                <div class="scenario-box">
+                    <h4>📋 一个真实的排产上午</h4>
+                    <p><strong>8:00</strong> 车间主任拿着白板，开始排今天的生产。</p>
+                    <p>"1 号机做 A 产品，2 号机做 B，3 号机……"排了一上午。</p>
+                    <p><strong>10:30</strong> 老板打电话："C 客户的单子要提前，插进去！"</p>
+                    <p>车间主任擦了白板，重新排。</p>
+                    <p><strong>11:00</strong> 仓库说："B 产品的模具在维修，2 号机换 D！"</p>
+                    <p>车间主任又擦，又排。</p>
+                    <p><strong>11:30</strong> 销售说："A 客户改了数量，从 5000 变成 3000。"</p>
+                    <p>车间主任……不排了。直接吃午饭去了。</p>
+                </div>
+
+                <p class="highlight">排了一上午，午饭前全部作废。</p>
+
+                <p>这不是段子。这是<strong>90% 注塑厂每天都在发生的真实场景</strong>。</p>
+
+                <hr style="border: none; border-top: 1px solid #eee; margin: 30px 0;">
+
+                <h2>💸 "排产"到底在浪费什么？</h2>
+
+                <p>很多人觉得排产就是"安排一下"，能浪费多少时间？</p>
+
+                <p>我们来算算。</p>
+
+                <table class="cost-table">
+                    <tr>
+                        <th>浪费项目</th>
+                        <th>估算</th>
+                    </tr>
+                    <tr>
+                        <td>车间主任排产耗时</td>
+                        <td>每天 1-2 小时</td>
+                    </tr>
+                    <tr>
+                        <td>因排产错误导致的换模</td>
+                        <td>每周 2-3 次无意义换模</td>
+                    </tr>
+                    <tr>
+                        <td>紧急插单导致的产线停顿</td>
+                        <td>每次 30-60 分钟</td>
+                    </tr>
+                    <tr>
+                        <td>排产信息传达遗漏</td>
+                        <td>每月 3-5 次"不知道该做什么"</td>
+                    </tr>
+                    <tr>
+                        <td>因交期延误造成的客户流失</td>
+                        <td>难以量化，但最致命</td>
+                    </tr>
+                </table>
+
+                <p>光车间主任的排产时间，一个月就是 <span class="stat-highlight">20-40 小时</span>。这还只是看得见的时间。</p>
+
+                <p>看不见的呢？因为排错机器导致的无意义换模、因为漏排导致的交期延误、因为信息传达错误做出的 wrong product——这些才是真正的成本黑洞。</p>
+
+                <div class="quote-box">
+                    <h4 style="margin-top: 0;">排产问题的连锁反应</h4>
+                    <ul style="padding-left: 20px; margin-bottom: 0;">
+                        <li><strong>排错机器 →</strong> 临时换模，浪费 30-60 分钟</li>
+                        <li><strong>漏排 →</strong> 交期延误，客户不满</li>
+                        <li><strong>信息不同步 →</strong> 操作工不知道做什么，机器空转</li>
+                        <li><strong>紧急插单打乱节奏 →</strong> 频繁换模，效率骤降</li>
+                        <li><strong>靠脑子记 →</strong> 车间主任一走，没人知道今天该干嘛</li>
+                    </ul>
+                </div>
+
+                <hr style="border: none; border-top: 1px solid #eee; margin: 30px 0;">
+
+                <h2>📊 MES 怎么管？一张甘特图，让所有人看清楚</h2>
+
+                <p>普托云联 MES 的<strong>排产计划模块</strong>，核心就是一个<strong>甘特图面板</strong>。</p>
+
+                <p>左边是机台列表，右边是时间轴。每个工单是一条色块，清清楚楚：</p>
+
+                <div class="color-demo">
+                    <span class="color-item color-green">🟢 生产中</span>
+                    <span class="color-item color-orange">🟠 数量达标</span>
+                    <span class="color-item color-red">🔴 超出交期</span>
+                    <span class="color-item color-blue">🔵 待生产</span>
+                </div>
+
+                <p>一眼就能看出：</p>
+                <ul style="padding-left: 20px;">
+                    <li>哪些机台在忙，哪些闲着</li>
+                    <li>哪些工单快超时了（红色边框）</li>
+                    <li>接下来几小时要换什么模具</li>
+                </ul>
+
+                <p><strong>不需要问，不需要打电话，打开屏幕就知道。</strong></p>
+
+                <hr style="border: none; border-top: 1px solid #eee; margin: 30px 0;">
+
+                <h2>✋ 最狠的功能：拖拽排产</h2>
+
+                <p>排产不是"看"的问题——是"调"的问题。</p>
+
+                <p>以前调排产：</p>
+                <p>擦白板 → 重新算 → 打电话确认模具 → 通知操作工 → 改 Excel。</p>
+
+                <p>现在调排产：</p>
+                <p><strong>鼠标拖一下，搞定。</strong></p>
+
+                <p>三种排产方式，覆盖所有场景——</p>
+
+                <table class="compare-table">
+                    <tr>
+                        <th>排产方式</th>
+                        <th>操作</th>
+                        <th>适用场景</th>
+                    </tr>
+                    <tr>
+                        <td><strong>选定机器</strong></td>
+                        <td>选中工单 → 点"选定机器" → 选机台</td>
+                        <td>快速排单个工单</td>
+                    </tr>
+                    <tr>
+                        <td><strong>拖拽排产</strong></td>
+                        <td>按住工单条 → 拖到目标机台 → 松手</td>
+                        <td>批量排产、精细调整</td>
+                    </tr>
+                    <tr>
+                        <td><strong>跨机台迁移</strong></td>
+                        <td>拖到其他机台 → 系统自动校验模具匹配</td>
+                        <td>机器故障、紧急切单</td>
+                    </tr>
+                </table>
+
+                <p>拖的时候，如果<strong>时间冲突</strong>，系统会直接提示——不会让你排两个工单到同一台机器上。</p>
+
+                <hr style="border: none; border-top: 1px solid #eee; margin: 30px 0;">
+
+                <h2>🚨 紧急插单，终于不用"全部推翻重来"</h2>
+
+                <p>回到开头那个场景——</p>
+
+                <p>老板说"C 客户要提前"。车间主任以前要擦白板重来。现在呢？</p>
+
+                <p>在工单列表中找到 C 的工单 → 拖到目标机台的空档 → 系统自动把后面的工单往后推 → <span class="stat-highlight">30 秒搞定</span>。</p>
+
+                <p>如果目标机台模具不匹配，系统直接提示，不会让你排到一个做不了的机台上。</p>
+
+                <p>如果空间不够，可以先暂停不紧急的工单，给插单腾位置。</p>
+
+                <div class="quote-box">
+                    <p style="margin: 0;"><strong>以前：</strong>插一个单，排半天，所有人都重新通知一遍。</p>
+                    <p style="margin: 8px 0 0 0;"><strong>现在：</strong>拖一下，30 秒，系统自动调整，所有人打开屏幕看到最新排产。</p>
+                </div>
+
+                <hr style="border: none; border-top: 1px solid #eee; margin: 30px 0;">
+
+                <h2>📊 上线前后对比</h2>
+
+                <table class="compare-table">
+                    <tr>
+                        <th>对比维度</th>
+                        <th>上线前</th>
+                        <th>上线后</th>
+                    </tr>
+                    <tr>
+                        <td>排产方式</td>
+                        <td>白板 + 脑子 + Excel</td>
+                        <td>甘特图拖拽排产</td>
+                    </tr>
+                    <tr>
+                        <td>排产耗时</td>
+                        <td>每天 1-2 小时</td>
+                        <td>10-15 分钟</td>
+                    </tr>
+                    <tr>
+                        <td>紧急插单</td>
+                        <td>全部推翻，重新排</td>
+                        <td>拖拽插入，30 秒搞定</td>
+                    </tr>
+                    <tr>
+                        <td>排产冲突</td>
+                        <td>靠人脑发现，经常漏</td>
+                        <td>系统自动检测并提示</td>
+                    </tr>
+                    <tr>
+                        <td>信息同步</td>
+                        <td>口头传达，经常错</td>
+                        <td>所有人在系统里看到同一份</td>
+                    </tr>
+                    <tr>
+                        <td>排产可追溯</td>
+                        <td>白擦了就没</td>
+                        <td>完整历史，随时可查</td>
+                    </tr>
+                    <tr>
+                        <td>车间主任心态</td>
+                        <td>每天都在排、改、重排</td>
+                        <td>排完喝口茶，有问题随时调</td>
+                    </tr>
+                </table>
+
+                <hr style="border: none; border-top: 1px solid #eee; margin: 30px 0;">
+
+                <h2>🎯 更深层的逻辑</h2>
+
+                <p>排产这件事，表面上是"安排生产"，实际上考验的是<strong>信息同步能力</strong>。</p>
+
+                <p>白板排产最大的问题不是"慢"——是<strong>信息孤岛</strong>。</p>
+
+                <p>车间主任知道排了什么，操作工不知道。老板知道要插单，仓库不知道要准备模具。销售知道改了数量，生产不知道。</p>
+
+                <p><strong>信息不同步，是排产混乱的根源。</strong></p>
+
+                <p>MES 系统做的就是——把"某个人脑子里的计划"变成"所有人屏幕上看得到的计划"。</p>
+
+                <p>排产不再是车间主任一个人的活——它是一个<strong>全局可见、实时同步、随时可调</strong>的系统。</p>
+
+                <div class="quote-box">
+                    <em>"以前插个单，要挨个打电话。现在？拖一下就行，所有人打开系统就看到了。"</em><br>
+                    <span style="font-size: 14px; color: #999;">—— 深圳某电子厂生产主管，上线 MES 3 个月后</span>
+                </div>
+
+                <p><strong>不是车间主任能力不够，是工具太落后。</strong></p>
+
+                <p>用系统代替白板，用拖拽代替擦写，用全局可见代替口头传达——这才是数字工厂该有的样子。</p>
+
+                <hr style="border: none; border-top: 1px solid #eee; margin: 30px 0;">
+
+                <p class="highlight">排产不该是一场每天都在重来的噩梦。</p>
+
+                <p>因为排产的本质不是"安排"——是<strong>让所有人看到同一张图</strong>。</p>
+
+                <div style="text-align: center; padding: 30px 0; background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%); color: white; border-radius: 12px; margin-top: 30px;">
+                    <h3 style="margin-bottom: 8px;">普托云联 · MES 制造执行系统</h3>
+                    <p style="opacity: 0.9; margin-bottom: 16px;">甘特图拖拽排产，让每一台机器的生产计划一目了然</p>
+                    <p style="font-size: 14px; opacity: 0.8;">深圳市普托云联技术有限公司</p>
+                    <p style="font-size: 14px; opacity: 0.8;"><a href="https://tjskynet.com" style="color: #fff;">tjskynet.com</a></p>
+                </div>
+            </div>
+        </article>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <p>© 2026 深圳市普托云联技术有限公司 粤ICP备16060739号-1</p>
+    </div>
+</footer>
+</body>
+</html>
