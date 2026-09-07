@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>插一单、崩三单？这家工厂用一张甘特图，把排产会议从「吵架大会」变成了「看屏幕」 | 普托云联</title>
+<meta name="description" content="销售拍胸脯接单，车间排不下，插一单崩三单。MES排产计划用甘特图+产能仪表盘，让交期承诺有据可依，排产会议从吵架大会变成看屏幕。">
+<meta name="keywords" content="排产计划,甘特图,插单,交期管理,产能仪表盘,MES系统,注塑厂,工厂管理,数字化,普托云联">
+<link rel="stylesheet" href="../css/style.css">
+
+<style>
+/* Article page styles */
+.article-hero { background: linear-gradient(135deg, #1e3a5f 0%, #2563eb 50%, #0ea5e9 100%); padding: 60px 0 40px; color: #fff; }
+.article-hero .container { max-width: 760px; }
+.article-hero .article-tag { background: rgba(255,255,255,0.2); color: #fff; padding: 4px 14px; border-radius: 100px; font-size: 12px; font-weight: 600; display: inline-block; margin-bottom: 12px; }
+.article-hero h1 { font-size: 32px; font-weight: 800; line-height: 1.4; margin-bottom: 12px; }
+.article-hero .article-date { font-size: 14px; opacity: 0.8; }
+.article-body { max-width: 720px; margin: 0 auto; padding: 40px 0; line-height: 1.9; font-size: 17px; color: #333; }
+.article-body p { margin-bottom: 20px; }
+.article-body .highlight { color: #c00; font-weight: 600; font-size: 20px; }
+.article-body .quote-box { background: #f5f7fa; border-left: 4px solid #1a73e8; padding: 20px; margin: 24px 0; border-radius: 0 6px 6px 0; }
+.article-body .scenario-box { background: #fff8e1; border: 1px solid #ffe082; padding: 24px; margin: 24px 0; border-radius: 8px; }
+.article-body .scenario-box h4 { color: #f57f17; margin-top: 0; }
+.article-body .cost-table, .article-body .compare-table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+.article-body .cost-table th, .article-body .cost-table td { padding: 12px 16px; border-bottom: 1px solid #eee; text-align: left; }
+.article-body .cost-table th { background: #f0f7ff; font-weight: 600; }
+.article-body .cost-table td:last-child { text-align: right; font-weight: 600; color: #1a73e8; }
+.article-body .compare-table th, .article-body .compare-table td { padding: 10px 14px; border: 1px solid #ddd; text-align: center; }
+.article-body .compare-table th { background: #1a73e8; color: #fff; }
+.article-body .compare-table tr:nth-child(even) { background: #f9f9f9; }
+.article-body .stat-highlight { display: inline-block; background: #1a73e8; color: #fff; padding: 2px 10px; border-radius: 4px; font-weight: 600; }
+.article-body .color-demo { display: flex; gap: 12px; flex-wrap: wrap; margin: 16px 0; }
+.article-body .color-item { padding: 8px 16px; border-radius: 6px; font-size: 14px; font-weight: 600; }
+.article-body .color-green { background: #e8f5e9; color: #2e7d32; border: 2px solid #4caf50; }
+.article-body .color-orange { background: #fff3e0; color: #e65100; border: 2px solid #ff9800; }
+.article-body .color-red { background: #ffebee; color: #c62828; border: 2px solid #f44336; }
+.article-body .color-blue { background: #e3f2fd; color: #1565c0; border: 2px solid #2196f3; }
+.back-link { display: inline-flex; align-items: center; gap: 6px; color: #64748b; font-size: 14px; font-weight: 500; text-decoration: none; transition: color 0.2s; }
+.back-link:hover { color: #1d4ed8; }
+.article-page { background: #fff; }
+.related-posts { margin: 64px auto 0; padding-top: 40px; border-top: 2px solid #e2e8f0; max-width: 720px; }
+.related-posts h3 { font-size: 20px; font-weight: 700; margin-bottom: 24px; color: #1e293b; }
+.related-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.related-card { display: block; padding: 20px; background: #f8fafc; border-radius: 8px; border: 1px solid #e2e8f0; text-decoration: none; transition: all 0.2s; }
+.related-card:hover { border-color: #3b82f6; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
+.related-card .article-tag { margin-bottom: 8px; display: inline-block; }
+.related-card h4 { font-size: 16px; font-weight: 600; line-height: 1.4; margin-bottom: 8px; color: #1e293b; }
+.related-card:hover h4 { color: #1d4ed8; }
+.related-card .article-date { font-size: 13px; color: #64748b; }
+@media (max-width: 768px) {
+  .related-grid { grid-template-columns: 1fr; }
+  .article-hero h1 { font-size: 24px; }
+  .article-hero { padding: 40px 0 24px; }
+  .article-body { padding: 24px 0; }
+}
+</style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">普托云联</div>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="solutions.html">解决方案</a></li>
+                <li><a href="products.html">产品中心</a></li>
+                <li><a href="cases.html">客户案例</a></li>
+                <li><a href="news.html">新闻中心</a></li>
+                <li><a href="about.html">关于我们</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+            </ul>
+            <div class="lang-switch">
+                <a href="index.html">简</a>
+                <a href="../tw/index.html">繁</a>
+                <a href="../en/index.html">EN</a>
+            </div>
+        </div>
+    </nav>
+<div class="article-hero">
+    <div class="container">
+        <a href="news.html" class="back-link" style="color: rgba(255,255,255,0.8);">← 返回新闻列表</a>
+        <div>
+            <span class="article-tag" style="background: rgba(255,255,255,0.2); color: #fff; padding: 4px 14px; border-radius: 100px; font-size: 12px; font-weight: 600;">行业干货</span>
+        </div>
+        <h1>插一单、崩三单？这家工厂用一张甘特图，把排产会议从「吵架大会」变成了「看屏幕」</h1>
+        <span style="font-size: 14px; opacity: 0.8;">2026-09-07</span>
+    </div>
+</div>
+
+<main class="article-page">
+    <div class="container">
+        
+        <article class="article-content">
+            
+            
+
+            <div class="article-body">
+                <p>几乎每个工厂，都有一场开不完的会——<strong>排产会。</strong></p>
+
+                <p>每周一早上，销售、生产、PMC 挤在一间会议室里，从「谁的单先做」吵到「谁的货先交」，一吵就是两小时。</p>
+
+                <div class="scenario-box">
+                    <h4>😤 一个再普通不过的「插单」上午</h4>
+                    <p><strong>上午 9:40</strong> 销售王总冲进生产办公室，手里挥着一张新订单："老赵，华达那个大单我拿下了！20 万件，下周交货，你给排一下！"</p>
+                    <p><strong>上午 9:41</strong> 车间主任赵经理抬头，眉头已经皱起来了："下周？5 号机排到周三了，6 号机在赶广隆那个急单……"</p>
+                    <p><strong>上午 9:42</strong> 王总："单我都跟客户拍胸脯了，你看着办！"</p>
+                    <p>赵经理："我这边全都排满了，你接单之前怎么不问我一声？"</p>
+                    <p><strong>上午 10:00</strong> 两人吵到张总办公室。张总一拍桌子："先做华达的，其他往后挪挪。"</p>
+                    <p><strong>结果是——</strong></p>
+                    <p>华达的单硬插进去了。原本排好的三张单全部往后挪：</p>
+                    <p>广隆的单晚了 2 天，客户在电话里骂人；</p>
+                    <p>中山的单晚了 3 天，被扣了 5% 延期款；</p>
+                    <p>还有个老客户的小单，直接拖到下周——<strong>客户扭头找别家了。</strong></p>
+                </div>
+
+                <p class="highlight">插一单，崩三单。这不是排产的问题，是「看不见」的问题。</p>
+
+                <p>你以为的矛盾是「销售乱接单」和「车间做不出」。真正的病根是——<strong>排产这件事，全靠人脑记、靠嘴吵、靠拍桌子决定。</strong></p>
+
+                <hr style="border: none; border-top: 1px solid #eee; margin: 30px 0;">
+
+                <h2>💸 「拍脑袋排产」的真实成本</h2>
+
+                <p>没有系统的时候，工厂的排产是这样的：</p>
+
+                <ul style="padding-left: 20px;">
+                    <li>谁的单急、谁的关系硬，谁就先排——<strong>不是按交期，是按嗓门</strong></li>
+                    <li>每台机现在在做什么、还剩多少、能不能插——<strong>全在车间主任脑子里</strong></li>
+                    <li>接单的时候不知道车间能不能做——<strong>销售先接，车间再扛</strong></li>
+                    <li>插一单进去，要往后挪哪几单、每单晚几天——<strong>没人算得清</strong></li>
+                </ul>
+
+                <p>这些「看不见」，一年吃掉多少钱？</p>
+
+                <table class="cost-table">
+                    <tr>
+                        <th>隐性成本</th>
+                        <th>估算</th>
+                    </tr>
+                    <tr>
+                        <td>排产会议工时</td>
+                        <td>每天 1-2 小时 × 销售/生产/PMC 多人，一年近千小时</td>
+                    </tr>
+                    <tr>
+                        <td>延期交货扣款</td>
+                        <td>单次 3%-10%，大单一次就是几千到几万</td>
+                    </tr>
+                    <tr>
+                        <td>插单连带延误</td>
+                        <td>插一单，平均连带 2-4 单延期</td>
+                    </tr>
+                    <tr>
+                        <td>客户流失</td>
+                        <td>交期承诺屡屡失约，老客户默默流失，无可估量</td>
+                    </tr>
+                    <tr>
+                        <td>紧急换模/加班</td>
+                        <td>临时调单带来的换模损耗 + 赶工加班费</td>
+                    </tr>
+                </table>
+
+                <p>一个中型注塑厂，假设每月插单 <span class="stat-highlight">8-12 次</span>，每次连带延误 3 单：</p>
+
+                <p>一年延期扣款 <span class="stat-highlight">5-15 万</span>，加上客户流失、会议工时、赶工加班——<strong>「拍脑袋排产」一年至少吃掉 20-40 万。</strong></p>
+
+                <p>而且，这笔钱花得特别憋屈：<strong>不是机器不行、不是工人不行，纯粹是「没算清」。</strong></p>
+
+                <hr style="border: none; border-top: 1px solid #eee; margin: 30px 0;">
+
+                <h2>📱 MES 怎么管？甘特图 + 产能仪表盘，让交期「有据可依」</h2>
+
+                <p>普托云联 MES 的<strong>排产计划</strong>模块，核心逻辑就一条——</p>
+
+                <p><strong>把「谁说了算」变成「数据说了算」。</strong></p>
+
+                <div class="color-demo">
+                    <span class="color-item color-green">✅ 甘特图排产 — 每台机排了什么、排到几点，屏幕上一目了然</span>
+                    <span class="color-item color-blue">✅ 拖拽插单 — 紧急单拖进去，系统自动提示时间冲突</span>
+                    <span class="color-item color-orange">✅ 超交期红色预警 — 排不下就是排不下，红框明明白白</span>
+                    <span class="color-item color-red">✅ 产能仪表盘 — 接单前先看剩余产能，交期承诺有据可依</span>
+                </div>
+
+                <p>它是这样工作的：</p>
+
+                <p><strong>1. 全厂排产可视化</strong></p>
+                <ul style="padding-left: 20px;">
+                    <li>甘特图把每台机的任务条铺在时间轴上，谁在生产、谁待生产、谁已达标，颜色一眼区分</li>
+                    <li>计划完成时间晚于交货日期的单，自动标出<strong>红色边框</strong>，优先处理</li>
+                </ul>
+
+                <p><strong>2. 插单先看冲突</strong></p>
+                <ul style="padding-left: 20px;">
+                    <li>紧急单拖进目标机台，系统<strong>自动提示时间冲突</strong>，告诉你会挤到哪几单</li>
+                    <li>要插单，先把冲突摊在桌面上——不是靠谁嗓门大</li>
+                </ul>
+
+                <p><strong>3. 接单前先查产能</strong></p>
+                <ul style="padding-left: 20px;">
+                    <li>销售接单前，打开产能仪表盘：这条产线还剩多少闲置产能、OEE 多少、排到几号</li>
+                    <li>能不能接、能承诺哪天交——<strong>数据先说话，销售再开口</strong></li>
+                </ul>
+
+                <p><strong>4. 冲突可追溯</strong></p>
+                <ul style="padding-left: 20px;">
+                    <li>模具是否匹配机台、机台是否被保养占用、产线是否排满——系统一一校验</li>
+                    <li>「不是我卡你，是数据在说话」，甩锅彻底失效</li>
+                </ul>
+
+                <p><strong>排得下，就排；排不下，屏幕会告诉你为什么。</strong></p>
+
+                <hr style="border: none; border-top: 1px solid #eee; margin: 30px 0;">
+
+                <h2>🔥 上线前后对比：从「吵架大会」到「看屏幕」</h2>
+
+                <table class="compare-table">
+                    <tr>
+                        <th>维度</th>
+                        <th>上线前</th>
+                        <th>上线后</th>
+                    </tr>
+                    <tr>
+                        <td>排产依据</td>
+                        <td>谁嗓门大、谁关系硬</td>
+                        <td>交期优先级 + 系统校验</td>
+                    </tr>
+                    <tr>
+                        <td>排产会议</td>
+                        <td>每天 1-2 小时吵架</td>
+                        <td>10 分钟对一遍屏幕</td>
+                    </tr>
+                    <tr>
+                        <td>插单决策</td>
+                        <td>拍脑袋，挤了谁不知道</td>
+                        <td>系统提示冲突，挤了谁一目了然</td>
+                    </tr>
+                    <tr>
+                        <td>交期承诺</td>
+                        <td>销售拍胸脯，车间背锅</td>
+                        <td>先查产能，再承诺交期</td>
+                    </tr>
+                    <tr>
+                        <td>延期责任</td>
+                        <td>互相甩锅，说不清</td>
+                        <td>证据对齐，责任到单</td>
+                    </tr>
+                    <tr>
+                        <td>老板掌控力</td>
+                        <td>排产状态一问三不知</td>
+                        <td>手机随时看全厂排产和产能</td>
+                    </tr>
+                </table>
+
+                <hr style="border: none; border-top: 1px solid #eee; margin: 30px 0;">
+
+                <h2>🎯 更深层的逻辑</h2>
+
+                <p>排产这件事，本质不是「怎么排」，是——<strong>「谁能对交期负责」。</strong></p>
+
+                <p>以前，销售对客户负责，车间对生产负责，中间隔着一条鸿沟：</p>
+
+                <p>销售不知道车间能不能做，先接了再说；车间不知道哪单最急，先做了再说。最后交期错了，<strong>两边都觉得自己没责任。</strong></p>
+
+                <p>MES 排产解决的是什么？</p>
+
+                <p><strong>不是「排得更快」——是「让所有人看到同一张图、同一个数字」。</strong></p>
+
+                <p>销售接单前看一眼产能，就知道能不能承诺；车间插单前看一眼甘特图，就知道挤了谁；老板打开手机，就知道全厂排到哪、卡在哪。</p>
+
+                <p>当所有人看到的是同一张甘特图，<strong>「吵架」就失去了意义</strong>——因为屏幕上有答案。</p>
+
+                <div class="quote-box">
+                    <p style="margin: 0;"><strong>"以前排产会就是吵架会，销售喊交期、生产喊产能，PMC 在中间被夹成肉饼。现在打开系统，产线负荷、交期优先级、模具状态全在屏幕上。王总看一眼屏幕，没话说了——不是人变好了，是证据对齐了。"</strong></p>
+                    <p style="margin: 8px 0 0 0; font-size: 14px; color: #999;">—— 深圳某注塑厂生产经理，上线后交期达标率从 67% 提升到 91%</p>
+                </div>
+
+                <p>排产不是成本——<strong>是交期的地基。</strong></p>
+
+                <p>花 10 分钟对一遍屏幕，省下的是每天 2 小时的吵架、每月十几万的延期损失，还有那些正在悄悄流失的老客户。</p>
+
+                <p>这笔账，每个老板都应该算清楚。</p>
+
+                <div style="text-align: center; padding: 30px 0; background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%); color: white; border-radius: 12px; margin-top: 30px;">
+                    <h3 style="margin-bottom: 8px;">普托云联 · MES 制造执行系统</h3>
+                    <p style="opacity: 0.9; margin-bottom: 16px;">排产计划模块 — 甘特图排产 + 产能仪表盘，让交期承诺有据可依</p>
+                    <p style="font-size: 14px; opacity: 0.8;">深圳市普托云联技术有限公司</p>
+                    <p style="font-size: 14px; opacity: 0.8;"><a href="https://tjskynet.com" style="color: #fff;">tjskynet.com</a></p>
+                </div>
+            </div>
+        
+<div class="related-posts">
+  <h3>📖 推荐阅读</h3>
+  <div class="related-grid">
+    <a href="news-detail-21.html" class="related-card">
+      <span class="article-tag industry-tag">行业干货</span>
+      <h4>设备坏了才修？这家工厂一年非计划停机 127 次，换了个管理方式后降到 12 次</h4>
+      <span class="article-date">2026-07-06</span>
+    </a>
+    <a href="news-detail-19.html" class="related-card">
+      <span class="article-tag industry-tag">行业干货</span>
+      <h4>客户催单，还在车间靠吼？坐办公室掏出手机一看，比问谁都准</h4>
+      <span class="article-date">2026-06-15</span>
+    </a>
+    <a href="news-detail-20.html" class="related-card">
+      <span class="article-tag industry-tag">行业干货</span>
+      <h4>新人第一天就能独立操作？这家工厂把老师傅 20 年经验变成了"一键调用"</h4>
+      <span class="article-date">2026-06-29</span>
+    </a>
+    <a href="news-detail-18.html" class="related-card">
+      <span class="article-tag industry-tag">行业干货</span>
+      <h4>一出次品就开会扯皮？这家工厂用一招让所有人闭嘴</h4>
+      <span class="article-date">2026-06-08</span>
+    </a>
+  </div>
+</div>
+        </article>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <p>© 2026 深圳市普托云联技术有限公司 粤ICP备16060739号-1</p>
+    </div>
+</footer>
+</body>
+</html>

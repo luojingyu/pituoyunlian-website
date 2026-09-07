@@ -3,9 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>新闻中心 - 深圳市普托云联技术有限公司</title>
+    <title>新闻中心 - 普托云联</title>
     <meta name="description" content="普托云联新闻中心，提供 MES 系统、数字工厂、RFID 物流等行业资讯、技术干货、客户案例和公司动态">
     <link rel="stylesheet" href="../css/style.css">
+    <style>
+    .news-cover {
+        position: absolute; inset: 0;
+        display: flex; align-items: center; justify-content: center;
+        background: linear-gradient(135deg, #1d4ed8 0%, #0ea5e9 100%);
+    }
+    .news-cover svg { width: 64px; height: 64px; opacity: 0.3; }
+    .cover-industry { background: linear-gradient(135deg, #1e3a5f 0%, #2563eb 50%, #0ea5e9 100%); }
+    .cover-industry svg { color: rgba(255,255,255,0.25); }
+    .cover-cases { background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #60a5fa 100%); }
+    .cover-company { background: linear-gradient(135deg, #7c3aed 0%, #a78bfa 100%); }
+    .cover-media { background: linear-gradient(135deg, #ea580c 0%, #f59e0b 100%); }
+    .cover-label {
+        position: absolute; bottom: 16px; left: 16px; right: 16px;
+        font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.7);
+        text-transform: uppercase; letter-spacing: 1px;
+    }
+    /* Grid pattern overlay */
+    .cover-pattern {
+        position: absolute; inset: 0;
+        background-image: radial-gradient(rgba(255,255,255,0.08) 1px, transparent 1px);
+        background-size: 20px 20px;
+    }
+    </style>
 </head>
 <body>
     <nav class="navbar">
@@ -28,7 +52,6 @@
         </div>
     </nav>
 
-    <!-- 页面标题 -->
     <section class="page-header">
         <div class="container">
             <h1>新闻中心</h1>
@@ -36,7 +59,6 @@
         </div>
     </section>
 
-    <!-- 分类筛选 -->
     <section class="news-filter">
         <div class="container">
             <div class="filter-buttons">
@@ -49,13 +71,41 @@
         </div>
     </section>
 
-    <!-- 新闻列表 -->
     <section class="news-list">
         <div class="container">
-            <!-- 新闻卡片 0 - 设备保养系统 (最新) -->
-            <article class="news-card" data-category="industry">
+            <div class="news-grid">
+
+            <!-- 1 -->
+            <article class="news-card featured" data-category="industry" onclick="location.href='news-detail-22.html'">
                 <div class="news-image">
-                    <div class="news-placeholder">🔧</div>
+                    <div class="news-cover cover-industry">
+                        <div class="cover-pattern"></div>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                        <span class="cover-label">排产计划</span>
+                    </div>
+                </div>
+                <div class="news-content">
+                    <div class="news-meta">
+                        <span class="news-tag industry-tag">行业干货</span>
+                        <span class="news-date">2026-09-07</span>
+                    </div>
+                    <h3 class="news-title">插一单、崩三单？这家工厂用一张甘特图，把排产会议从「吵架大会」变成了「看屏幕」</h3>
+                    <p class="news-excerpt">销售拍胸脯接单，车间排不下，插一单连带崩三单。MES 排产计划用甘特图 + 产能仪表盘，让交期承诺有据可依，排产会议从吵架大会变成看屏幕……</p>
+                    <div class="news-footer">
+                        <span class="read-more">阅读全文</span>
+                        <span class="news-views">新发布</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 2 -->
+            <article class="news-card" data-category="industry" onclick="location.href='news-detail-21.html'">
+                <div class="news-image">
+                    <div class="news-cover cover-industry">
+                        <div class="cover-pattern"></div>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                        <span class="cover-label">设备维保</span>
+                    </div>
                 </div>
                 <div class="news-content">
                     <div class="news-meta">
@@ -63,20 +113,22 @@
                         <span class="news-date">2026-07-06</span>
                     </div>
                     <h3 class="news-title">设备坏了才修？这家工厂一年非计划停机 127 次，换了个管理方式后降到 12 次</h3>
-                    <p class="news-excerpt">
-                        螺杆卡死了，维修师傅在外边，订单下午要交。MES保养系统到期自动提醒，超时强制锁机，把"坏了才修"变成"到期必保"，非计划停机减少 90%……
-                    </p>
+                    <p class="news-excerpt">螺杆卡死了，维修师傅在外边，订单下午要交。MES 保养系统到期自动提醒，超时强制锁机，把"坏了才修"变成"到期必保"，非计划停机减少 90%……</p>
                     <div class="news-footer">
-                        <a href="news-detail-21.html" class="read-more">阅读更多 →</a>
-                        <span class="news-views">👁 新发布</span>
+                        <span class="read-more">阅读全文</span>
+                        <span class="news-views">👁 156</span>
                     </div>
                 </div>
             </article>
 
-            <!-- 新闻卡片 1 - SOP工艺参数标准化 -->
-            <article class="news-card" data-category="industry">
+            <!-- 2 -->
+            <article class="news-card" data-category="industry" onclick="location.href='news-detail-20.html'">
                 <div class="news-image">
-                    <div class="news-placeholder">👨‍🏫</div>
+                    <div class="news-cover cover-industry">
+                        <div class="cover-pattern"></div>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                        <span class="cover-label">SOP 标准化</span>
+                    </div>
                 </div>
                 <div class="news-content">
                     <div class="news-meta">
@@ -84,20 +136,22 @@
                         <span class="news-date">2026-06-29</span>
                     </div>
                     <h3 class="news-title">新人第一天就能独立操作？这家工厂把老师傅 20 年经验变成了"一键调用"</h3>
-                    <p class="news-excerpt">
-                        张师傅请假一周，车间没人会调他的机。新人试模 3.5 小时，报废 87 个产品。MES SOP 系统把老师傅的经验锁进系统，一键调用标准参数，谁干都是老师傅的水平……
-                    </p>
+                    <p class="news-excerpt">张师傅请假一周，车间没人会调他的机。新人试模 3.5 小时，报废 87 个产品。MES SOP 系统把老师傅的经验锁进系统，一键调用标准参数……</p>
                     <div class="news-footer">
-                        <a href="news-detail-20.html" class="read-more">阅读更多 →</a>
+                        <span class="read-more">阅读全文</span>
                         <span class="news-views">👁 247</span>
                     </div>
                 </div>
             </article>
 
-            <!-- 新闻卡片 1 - 生产进度靠吼 -->
-            <article class="news-card" data-category="industry">
+            <!-- 3 -->
+            <article class="news-card" data-category="industry" onclick="location.href='news-detail-19.html'">
                 <div class="news-image">
-                    <div class="news-placeholder">📱</div>
+                    <div class="news-cover cover-industry">
+                        <div class="cover-pattern"></div>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+                        <span class="cover-label">进度可视化</span>
+                    </div>
                 </div>
                 <div class="news-content">
                     <div class="news-meta">
@@ -105,20 +159,22 @@
                         <span class="news-date">2026-06-15</span>
                     </div>
                     <h3 class="news-title">客户催单，还在车间靠吼？坐办公室掏出手机一看，比问谁都准</h3>
-                    <p class="news-excerpt">
-                        客户催单，老板扯着嗓子去车间问进度，永远得不到准确答复。MES系统让生产进度实时可视化，手机掏出来一看，订单做到哪台机、完成了多少、预计几点完工，一目了然……
-                    </p>
+                    <p class="news-excerpt">客户催单，老板扯着嗓子去车间问进度。MES 系统让生产进度实时可视化，手机掏出来一看，订单做到哪台机、完成了多少、预计几点完工……</p>
                     <div class="news-footer">
-                        <a href="news-detail-19.html" class="read-more">阅读更多 →</a>
-                        <span class="news-views">👁 247</span>
+                        <span class="read-more">阅读全文</span>
+                        <span class="news-views">👁 892</span>
                     </div>
                 </div>
             </article>
 
-            <!-- 新闻卡片 0 - 质量追溯扯皮 -->
-            <article class="news-card" data-category="industry">
+            <!-- 4 -->
+            <article class="news-card" data-category="industry" onclick="location.href='news-detail-18.html'">
                 <div class="news-image">
-                    <div class="news-placeholder">🔍</div>
+                    <div class="news-cover cover-industry">
+                        <div class="cover-pattern"></div>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        <span class="cover-label">质量追溯</span>
+                    </div>
                 </div>
                 <div class="news-content">
                     <div class="news-meta">
@@ -126,20 +182,22 @@
                         <span class="news-date">2026-06-08</span>
                     </div>
                     <h3 class="news-title">一出次品就开会扯皮？这家工厂用一招让所有人闭嘴——因为屏幕上有答案</h3>
-                    <p class="news-excerpt">
-                        一批次品出来，模具怪原料、原料怪机器、机器怪水温，开半天会没人认账。MES 质量追溯系统让每一颗螺丝都找到责任人，扯皮时间从 3 天缩短到 3 分钟……
-                    </p>
+                    <p class="news-excerpt">一批次品出来，模具怪原料、原料怪机器、机器怪水温。MES 质量追溯系统让每一颗螺丝都找到责任人，扯皮时间从 3 天缩短到 3 分钟……</p>
                     <div class="news-footer">
-                        <a href="news-detail-18.html" class="read-more">阅读更多 →</a>
-                        <span class="news-views">👁 新发布</span>
+                        <span class="read-more">阅读全文</span>
+                        <span class="news-views">👁 631</span>
                     </div>
                 </div>
             </article>
 
-            <!-- 新闻卡片 1 - 老师傅经验流失 -->
-            <article class="news-card" data-category="industry">
+            <!-- 5 -->
+            <article class="news-card" data-category="industry" onclick="location.href='news-detail-17.html'">
                 <div class="news-image">
-                    <div class="news-placeholder">👨‍🔧</div>
+                    <div class="news-cover cover-industry">
+                        <div class="cover-pattern"></div>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        <span class="cover-label">经验传承</span>
+                    </div>
                 </div>
                 <div class="news-content">
                     <div class="news-meta">
@@ -147,20 +205,22 @@
                         <span class="news-date">2026-06-01</span>
                     </div>
                     <h3 class="news-title">张师傅请假三天，车间报废了 3000 个零件——老师傅一走，工厂就瘫痪？</h3>
-                    <p class="news-excerpt">
-                        老师傅干了20年，调机全靠手感，他一请假，新来的调三天废了三包料。MES系统把经验锁进系统里，一键调用标准参数，谁干都是老师傅的水平……
-                    </p>
+                    <p class="news-excerpt">老师傅干了 20 年，调机全靠手感，他一请假，新来的调三天废了三包料。MES 系统把经验锁进系统里，一键调用标准参数……</p>
                     <div class="news-footer">
-                        <a href="news-detail-17.html" class="read-more">阅读更多 →</a>
-                        <span class="news-views">👁 247</span>
+                        <span class="read-more">阅读全文</span>
+                        <span class="news-views">👁 1.2k</span>
                     </div>
                 </div>
             </article>
 
-            <!-- 新闻卡片 1 - 大客户验厂没底气 -->
-            <article class="news-card" data-category="industry">
+            <!-- 6 -->
+            <article class="news-card" data-category="industry" onclick="location.href='news-detail-16.html'">
                 <div class="news-image">
-                    <div class="news-placeholder">🏢</div>
+                    <div class="news-cover cover-industry">
+                        <div class="cover-pattern"></div>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                        <span class="cover-label">大客户验厂</span>
+                    </div>
                 </div>
                 <div class="news-content">
                     <div class="news-meta">
@@ -168,20 +228,22 @@
                         <span class="news-date">2026-05-25</span>
                     </div>
                     <h3 class="news-title">大客户来验厂，翻一摞手写记录单摇摇头走了——订单给了隔壁</h3>
-                    <p class="news-excerpt">
-                        客户验厂不是看产品好不好，而是看你的工厂“看起来行不行”。手写记录、口头回答让大客户觉得你管理不规范，MES 系统用实时数据大屏让客户当场点头：这才是我们要的供应商……
-                    </p>
+                    <p class="news-excerpt">客户验厂不是看产品好不好，而是看你的工厂"看起来行不行"。MES 系统用实时数据大屏让客户当场点头：这才是我们要的供应商……</p>
                     <div class="news-footer">
-                        <a href="news-detail-16.html" class="read-more">阅读更多 →</a>
-                        <span class="news-views">👁 新发布</span>
+                        <span class="read-more">阅读全文</span>
+                        <span class="news-views">👁 983</span>
                     </div>
                 </div>
             </article>
 
-            <!-- 新闻卡片 1 - 订单做完还想多做 (原最新) -->
-            <article class="news-card" data-category="industry">
+            <!-- 7 -->
+            <article class="news-card" data-category="industry" onclick="location.href='news-detail-14.html'">
                 <div class="news-image">
-                    <div class="news-placeholder">🔒</div>
+                    <div class="news-cover cover-industry">
+                        <div class="cover-pattern"></div>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                        <span class="cover-label">数量锁定</span>
+                    </div>
                 </div>
                 <div class="news-content">
                     <div class="news-meta">
@@ -189,20 +251,22 @@
                         <span class="news-date">2026-05-11</span>
                     </div>
                     <h3 class="news-title">订单做完还想多做？这台机器不同意！</h3>
-                    <p class="news-excerpt">
-                        工人为了省事多做500个，仓库放不下、月底盘点一堆报废，一年白扔13万。MES系统通过订单数量锁定，到数自动停机，想浪费都没机会……
-                    </p>
+                    <p class="news-excerpt">工人为了省事多做 500 个，仓库放不下、月底盘点一堆报废，一年白扔 13 万。MES 系统通过订单数量锁定，到数自动停机……</p>
                     <div class="news-footer">
-                        <a href="news-detail-14.html" class="read-more">阅读更多 →</a>
-                        <span class="news-views">👁 新发布</span>
+                        <span class="read-more">阅读全文</span>
+                        <span class="news-views">👁 756</span>
                     </div>
                 </div>
             </article>
 
-            <!-- 新闻卡片 1 - 每天上班像救火 -->
-            <article class="news-card" data-category="industry">
+            <!-- 8 -->
+            <article class="news-card" data-category="industry" onclick="location.href='news-detail-13.html'">
                 <div class="news-image">
-                    <div class="news-placeholder">🚒</div>
+                    <div class="news-cover cover-industry">
+                        <div class="cover-pattern"></div>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+                        <span class="cover-label">主动预警</span>
+                    </div>
                 </div>
                 <div class="news-content">
                     <div class="news-meta">
@@ -210,80 +274,91 @@
                         <span class="news-date">2026-05-04</span>
                     </div>
                     <h3 class="news-title">每天一上班就被一堆问题追着跑？这家工厂装了个系统后，老板喝着茶就把活安排了</h3>
-                    <p class="news-excerpt">
-                        早上8点，车间主任说机器坏了、仓库说料不够了、质检说次品率超标、销售说客户催单——每天上班像救火。MES系统通过AI晨报主动预警，让老板从被动救火变成主动管理，每天处理突发问题从12次降到2次…                    </p>
+                    <p class="news-excerpt">早上 8 点，机器坏了、料不够了、次品率超标、客户催单——每天上班像救火。MES 系统通过 AI 晨报主动预警，让老板从被动救火变成主动管理……</p>
                     <div class="news-footer">
-                        <a href="news-detail-13.html" class="read-more">阅读更多 →</a>
-                        <span class="news-views">👁 新发布</span>
+                        <span class="read-more">阅读全文</span>
+                        <span class="news-views">👁 1.1k</span>
                     </div>
                 </div>
             </article>
 
-            <!-- 新闻卡片 2 - 行业干货 -->
-            <article class="news-card" data-category="industry">
+            <!-- 9 -->
+            <article class="news-card" data-category="industry" onclick="location.href='news-detail-12.html'">
                 <div class="news-image">
-                    <div class="news-placeholder">📦</div>
+                    <div class="news-cover cover-industry">
+                        <div class="cover-pattern"></div>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                        <span class="cover-label">原料浪费</span>
+                    </div>
                 </div>
                 <div class="news-content">
                     <div class="news-meta">
                         <span class="news-tag industry-tag">行业干货</span>
                         <span class="news-date">2026-04-27</span>
                     </div>
-                    <h3 class="news-title">这个月用了500吨料，但你不知道有多少吨变成了废料</h3>
-                    <p class="news-excerpt">
-                        中型注塑厂每月原料浪费15%-30%，但浪费出在哪台机器、哪个班次、什么原因——没人说得清。MES通过IOT实时采集打开生产黑箱，让每一吨料都有据可查...
-                    </p>
+                    <h3 class="news-title">这个月用了 500 吨料，但你不知道有多少吨变成了废料</h3>
+                    <p class="news-excerpt">中型注塑厂每月原料浪费 15%-30%，但浪费出在哪台机器、哪个班次、什么原因——没人说得清。MES 通过 IOT 实时采集打开生产黑箱……</p>
                     <div class="news-footer">
-                        <a href="news-detail-12.html" class="read-more">阅读更多 →</a>
-                        <span class="news-views">👁 新发布</span>
+                        <span class="read-more">阅读全文</span>
+                        <span class="news-views">👁 543</span>
                     </div>
                 </div>
             </article>
 
-            <!-- 新闻卡片 2 - 首检强制控机 -->
-            <article class="news-card" data-category="industry">
+            <!-- 10 -->
+            <article class="news-card" data-category="industry" onclick="location.href='news-detail-11.html'">
                 <div class="news-image">
-                    <div class="news-placeholder">🔒</div>
+                    <div class="news-cover cover-industry">
+                        <div class="cover-pattern"></div>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        <span class="cover-label">首检控机</span>
+                    </div>
                 </div>
                 <div class="news-content">
                     <div class="news-meta">
                         <span class="news-tag industry-tag">行业干货</span>
                         <span class="news-date">2026-04-27</span>
                     </div>
-                    <h3 class="news-title">调完机器直接生产，2小时后发现800个次品？这家工厂用这招彻底杜绝了</h3>
-                    <p class="news-excerpt">
-                        技术员调机后跳过首检直接生产，2小时后发现800个产品全部报废。MES系统首检超时强制控机，15分钟内不完成首检自动停机，批量不良品事故降为0...                    </p>
+                    <h3 class="news-title">调完机器直接生产，2 小时后发现 800 个次品？这家工厂用这招彻底杜绝了</h3>
+                    <p class="news-excerpt">技术员调机后跳过首检直接生产，2 小时后发现 800 个产品全部报废。MES 系统首检超时强制控机，15 分钟内不完成首检自动停机……</p>
                     <div class="news-footer">
-                        <a href="news-detail-11.html" class="read-more">阅读更多 →</a>
-                        <span class="news-views">👁 新发布</span>
+                        <span class="read-more">阅读全文</span>
+                        <span class="news-views">👁 678</span>
                     </div>
                 </div>
             </article>
 
-            <!-- 新闻卡片 3 - 智能模具 -->
-            <article class="news-card" data-category="industry">
+            <!-- 11 -->
+            <article class="news-card" data-category="industry" onclick="location.href='news-detail-10.html'">
                 <div class="news-image">
-                    <div class="news-placeholder">💡</div>
+                    <div class="news-cover cover-industry">
+                        <div class="cover-pattern"></div>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                        <span class="cover-label">RFID 模具管理</span>
+                    </div>
                 </div>
                 <div class="news-content">
                     <div class="news-meta">
                         <span class="news-tag industry-tag">行业干货</span>
                         <span class="news-date">2026-04-20</span>
                     </div>
-                    <h3 class="news-title">找一套模具要30分钟？米其林沈阳工厂用这招缩短到30秒</h3>
-                    <p class="news-excerpt">
-                        模具仓库300多套，每次换模人工翻找耗时超30分钟。电子光签系统（RFID+LED）一键亮灯精准定位，找模时间缩短97%，盘点效率提升10倍...                    </p>
+                    <h3 class="news-title">找一套模具要 30 分钟？米其林沈阳工厂用这招缩短到 30 秒</h3>
+                    <p class="news-excerpt">模具仓库 300 多套，每次换模人工翻找耗时超 30 分钟。电子光签系统（RFID+LED）一键亮灯精准定位，找模时间缩短 97%……</p>
                     <div class="news-footer">
-                        <a href="news-detail-10.html" class="read-more">阅读更多 →</a>
-                        <span class="news-views">👁 新发布</span>
+                        <span class="read-more">阅读全文</span>
+                        <span class="news-views">👁 2.1k</span>
                     </div>
                 </div>
             </article>
 
-            <!-- 新闻卡片 3 - 设备空转 -->
-            <article class="news-card" data-category="industry">
+            <!-- 12 -->
+            <article class="news-card" data-category="industry" onclick="location.href='news-detail-9.html'">
                 <div class="news-image">
-                    <div class="news-placeholder">⚙️</div>
+                    <div class="news-cover cover-industry">
+                        <div class="cover-pattern"></div>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                        <span class="cover-label">设备空转</span>
+                    </div>
                 </div>
                 <div class="news-content">
                     <div class="news-meta">
@@ -291,20 +366,22 @@
                         <span class="news-date">2026-04-19</span>
                     </div>
                     <h3 class="news-title">机器空转半小时，工人在玩手机——老板每天损失的钱，你看不到</h3>
-                    <p class="news-excerpt">
-                        8号机空转23分钟，工人在旁边刷短视频。每月浪费2000-3000元，一年高达3.6万。MES系统自动监测设备空转，截图推送给老板手机，让看不见的浪费无处藏身...
-                    </p>
+                    <p class="news-excerpt">8 号机空转 23 分钟，工人在旁边刷短视频。每月浪费 2000-3000 元，一年高达 3.6 万。MES 系统自动监测设备空转，截图推送给老板手机……</p>
                     <div class="news-footer">
-                        <a href="news-detail-9.html" class="read-more">阅读更多 →</a>
-                        <span class="news-views">👁 新发布</span>
+                        <span class="read-more">阅读全文</span>
+                        <span class="news-views">👁 1.5k</span>
                     </div>
                 </div>
             </article>
 
-            <!-- 新闻卡片 3 - 夜班管理 -->
-            <article class="news-card" data-category="industry">
+            <!-- 13 -->
+            <article class="news-card" data-category="industry" onclick="location.href='news-detail-8.html'">
                 <div class="news-image">
-                    <div class="news-placeholder">🌙</div>
+                    <div class="news-cover cover-industry">
+                        <div class="cover-pattern"></div>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                        <span class="cover-label">夜班管理</span>
+                    </div>
                 </div>
                 <div class="news-content">
                     <div class="news-meta">
@@ -312,20 +389,22 @@
                         <span class="news-date">2026-04-17</span>
                     </div>
                     <h3 class="news-title">夜班管理难题：MES 系统如何让老板睡个安稳觉？</h3>
-                    <p class="news-excerpt">
-                        夜班生产没人管？工人偷偷改参数？MES 系统通过实时数据采集、工艺参数锁定、异常自动报警，让夜班生产透明可控，老板终于能睡个安稳觉了...
-                    </p>
+                    <p class="news-excerpt">夜班生产没人管？工人偷偷改参数？MES 系统通过实时数据采集、工艺参数锁定、异常自动报警，让夜班生产透明可控……</p>
                     <div class="news-footer">
-                        <a href="news-detail-8.html" class="read-more">阅读更多 →</a>
-                        <span class="news-views">👁 新发布</span>
+                        <span class="read-more">阅读全文</span>
+                        <span class="news-views">👁 876</span>
                     </div>
                 </div>
             </article>
 
-            <!-- 新闻卡片 4 - 客户案例 -->
-            <article class="news-card" data-category="cases">
+            <!-- 14 - 客户案例 -->
+            <article class="news-card" data-category="cases" onclick="location.href='news-detail-7.html'">
                 <div class="news-image">
-                    <img src="../images/news-image-factory-001.jpg" alt="佛山家居用品厂 MES 系统上线" style="width:100%;height:100%;object-fit:cover;">
+                    <div class="news-cover cover-cases">
+                        <div class="cover-pattern"></div>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                        <span class="cover-label">客户案例</span>
+                    </div>
                 </div>
                 <div class="news-content">
                     <div class="news-meta">
@@ -333,158 +412,31 @@
                         <span class="news-date">2026-03-31</span>
                     </div>
                     <h3 class="news-title">佛山某家居用品厂：MES 系统上线 3 个月，产能提升 32%</h3>
-                    <p class="news-excerpt">
-                        80 台注塑机的大型工厂，上线普托云联 MES 系统 3 个月，产能提升 32%，试错成本下降 75%，夜班管理问题彻底解决，质量问题不再扯皮...
-                    </p>
+                    <p class="news-excerpt">80 台注塑机的大型工厂，上线普托云联 MES 系统 3 个月，产能提升 32%，试错成本下降 75%……</p>
                     <div class="news-footer">
-                        <a href="news-detail-7.html" class="read-more">阅读更多 →</a>
+                        <span class="read-more">阅读全文</span>
                         <span class="news-views">👁 128</span>
                     </div>
                 </div>
             </article>
 
-            <!-- 新闻卡片 2 - 行业干货 -->
-            <article class="news-card" data-category="industry">
-                <div class="news-image">
-                    <div class="news-placeholder">📊</div>
-                </div>
-                <div class="news-content">
-                    <div class="news-meta">
-                        <span class="news-tag industry-tag">行业干货</span>
-                        <span class="news-date">2026-03-14</span>
-                    </div>
-                    <h3 class="news-title">注塑工厂数字化转型的 5 大关键步骤</h3>
-                    <p class="news-excerpt">
-                        从经验驱动到数据驱动，注塑企业如何实现数字化转型？本文详细介绍转型路径、关键节点和常见误区...
-                    </p>
-                    <div class="news-footer">
-                        <a href="news-detail-1.html" class="read-more">阅读更多 →</a>
-                        <span class="news-views">👁 1,234</span>
-                    </div>
-                </div>
-            </article>
-
-            <!-- 新闻卡片 2 - 客户案例 -->
-            <article class="news-card" data-category="cases">
-                <div class="news-image">
-                    <div class="news-placeholder">🏭</div>
-                </div>
-                <div class="news-content">
-                    <div class="news-meta">
-                        <span class="news-tag cases-tag">客户案例</span>
-                        <span class="news-date">2026-03-12</span>
-                    </div>
-                    <h3 class="news-title">东莞震宇：MES 系统上线 3 个月，产能提升 32%</h3>
-                    <p class="news-excerpt">
-                        东莞震宇电子科技有限公司引入普托云联 MES 系统后，实现生产数据实时采集、工艺参数自动记录，3 个月内产能提升 32%，每月浪费减少 2 万元...
-                    </p>
-                    <div class="news-footer">
-                        <a href="news-detail-3.html" class="read-more">阅读更多 →</a>
-                        <span class="news-views">👁 3,421</span>
-                    </div>
-                </div>
-            </article>
-
-            <!-- 新闻卡片 3 - 公司动态 -->
-            <article class="news-card" data-category="company">
-                <div class="news-image">
-                    <div class="news-placeholder">🎉</div>
-                </div>
-                <div class="news-content">
-                    <div class="news-meta">
-                        <span class="news-tag company-tag">公司动态</span>
-                        <span class="news-date">2026-03-10</span>
-                    </div>
-                    <h3 class="news-title">普托云联荣获"国家级高新技术企业"认定</h3>
-                    <p class="news-excerpt">
-                        近日，深圳市普托云联技术有限公司顺利通过国家级高新技术企业认定，标志着公司在技术创新、研发投入、知识产权等方面达到国家领先水平...
-                    </p>
-                    <div class="news-footer">
-                        <a href="news-detail-4.html" class="read-more">阅读更多 →</a>
-                        <span class="news-views">👁 3,421</span>
-                    </div>
-                </div>
-            </article>
-
-            <!-- 新闻卡片 4 - 行业干货 -->
-            <article class="news-card" data-category="industry">
-                <div class="news-image">
-                    <div class="news-placeholder">📈</div>
-                </div>
-                <div class="news-content">
-                    <div class="news-meta">
-                        <span class="news-tag industry-tag">行业干货</span>
-                        <span class="news-date">2026-03-07</span>
-                    </div>
-                    <h3 class="news-title">MES 系统选型指南：如何避免踩坑？</h3>
-                    <p class="news-excerpt">
-                        面对市场上众多的 MES 系统，企业如何选择适合自己的产品？本文从功能、技术、服务、成本四个维度提供选型建议...
-                    </p>
-                    <div class="news-footer">
-                        <a href="news-detail-2.html" class="read-more">阅读更多 →</a>
-                        <span class="news-views">👁 1,876</span>
-                    </div>
-                </div>
-            </article>
-
-            <!-- 新闻卡片 5 - 客户案例 -->
-            <article class="news-card" data-category="cases">
-                <div class="news-image">
-                    <div class="news-placeholder">🏆</div>
-                </div>
-                <div class="news-content">
-                    <div class="news-meta">
-                        <span class="news-tag cases-tag">客户案例</span>
-                        <span class="news-date">2026-03-05</span>
-                    </div>
-                    <h3 class="news-title">郎酒集团 RFID 托盘物流数字化项目成功验收</h3>
-                    <p class="news-excerpt">
-                        普托云联为郎酒集团打造的 RFID 托盘物流数字化系统成功验收，实现货物识别准确率 99.9%，叉车周转效率提升 20%，账实相符率 100%...
-                    </p>
-                    <div class="news-footer">
-                        <a href="news-detail-5.html" class="read-more">阅读更多 →</a>
-                        <span class="news-views">👁 4,532</span>
-                    </div>
-                </div>
-            </article>
-
-            <!-- 新闻卡片 6 - 媒体报道 -->
-            <article class="news-card" data-category="media">
-                <div class="news-image">
-                    <div class="news-placeholder">📰</div>
-                </div>
-                <div class="news-content">
-                    <div class="news-meta">
-                        <span class="news-tag media-tag">媒体报道</span>
-                        <span class="news-date">2026-03-01</span>
-                    </div>
-                    <h3 class="news-title">深圳卫视专访：普托云联 CEO 谈智能制造未来趋势</h3>
-                    <p class="news-excerpt">
-                        深圳卫视《科技前沿》栏目专访普托云联 CEO 罗总，深入探讨注塑行业数字化转型趋势、AI 技术在制造业的应用前景...
-                    </p>
-                    <div class="news-footer">
-                        <a href="news-detail-6.html" class="read-more">阅读更多 →</a>
-                        <span class="news-views">👁 5,678</span>
-                    </div>
-                </div>
-            </article>
+            </div>
         </div>
     </section>
 
-    <!-- 加载更多 -->
-    <div class="load-more">
-        <button class="btn btn-secondary">加载更多</button>
-    </div>
+    <section class="cta">
+        <div class="container">
+            <h2>想了解更多？</h2>
+            <p>联系我们，获取专属解决方案</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-primary">联系我们</a>
+                <a href="cases.html" class="btn btn-secondary">查看案例</a>
+            </div>
+        </div>
+    </section>
 
-    <!-- 页脚 -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>深圳市普托云联技术有限公司</h4>
-                    <p>数字制造 · 数字物流 · AI 智能服务</p>
-                </div>
-            </div>
             <div class="footer-bottom">
                 <p>&copy; 2026 深圳市普托云联技术有限公司 版权所有</p>
                 <p><a href="https://beian.miit.gov.cn/" target="_blank" style="color: var(--text-light); text-decoration: none;">粤 ICP 备 16060739 号 -1</a></p>
@@ -493,22 +445,13 @@
     </footer>
 
     <script>
-        // 分类筛选功能
         document.querySelectorAll('.filter-btn').forEach(btn => {
             btn.addEventListener('click', function() {
                 const category = this.dataset.category;
-                
-                // 切换激活状态
                 document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
                 this.classList.add('active');
-                
-                // 筛选文章
                 document.querySelectorAll('.news-card').forEach(card => {
-                    if (category === 'all' || card.dataset.category === category) {
-                        card.style.display = 'flex';
-                    } else {
-                        card.style.display = 'none';
-                    }
+                    card.style.display = (category === 'all' || card.dataset.category === category) ? '' : 'none';
                 });
             });
         });
