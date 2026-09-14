@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>接了个大单，做完一算还倒亏 3 万？这家工厂现在接单前先算一笔账 | 普托云联</title>
+<meta name="description" content="销售拍胸脯说这单能赚，做完一盘账反而倒亏3万。MES成本核算把电费峰谷、返工报废、账期占用全摊进单子，接单前先算账，毛利看得见。">
+<meta name="keywords" content="成本核算,接单,毛利,单位成本,电费报表,峰谷电价,返工报废,账期,产品分类统计,MES系统,注塑厂,工厂管理,数字化,普托云联">
+<link rel="stylesheet" href="../css/style.css">
+
+<style>
+/* Article page styles */
+.article-hero { background: linear-gradient(135deg, #1e3a5f 0%, #2563eb 50%, #0ea5e9 100%); padding: 60px 0 40px; color: #fff; }
+.article-hero .container { max-width: 760px; }
+.article-hero .article-tag { background: rgba(255,255,255,0.2); color: #fff; padding: 4px 14px; border-radius: 100px; font-size: 12px; font-weight: 600; display: inline-block; margin-bottom: 12px; }
+.article-hero h1 { font-size: 32px; font-weight: 800; line-height: 1.4; margin-bottom: 12px; }
+.article-hero .article-date { font-size: 14px; opacity: 0.8; }
+.article-body { max-width: 720px; margin: 0 auto; padding: 40px 0; line-height: 1.9; font-size: 17px; color: #333; }
+.article-body p { margin-bottom: 20px; }
+.article-body .highlight { color: #c00; font-weight: 600; font-size: 20px; }
+.article-body .quote-box { background: #f5f7fa; border-left: 4px solid #1a73e8; padding: 20px; margin: 24px 0; border-radius: 0 6px 6px 0; }
+.article-body .scenario-box { background: #fff8e1; border: 1px solid #ffe082; padding: 24px; margin: 24px 0; border-radius: 8px; }
+.article-body .scenario-box h4 { color: #f57f17; margin-top: 0; }
+.article-body .cost-table, .article-body .compare-table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+.article-body .cost-table th, .article-body .cost-table td { padding: 12px 16px; border-bottom: 1px solid #eee; text-align: left; }
+.article-body .cost-table th { background: #f0f7ff; font-weight: 600; }
+.article-body .cost-table td:last-child { text-align: right; font-weight: 600; color: #1a73e8; }
+.article-body .compare-table th, .article-body .compare-table td { padding: 10px 14px; border: 1px solid #ddd; text-align: center; }
+.article-body .compare-table th { background: #1a73e8; color: #fff; }
+.article-body .compare-table tr:nth-child(even) { background: #f9f9f9; }
+.article-body .stat-highlight { display: inline-block; background: #1a73e8; color: #fff; padding: 2px 10px; border-radius: 4px; font-weight: 600; }
+.article-body .color-demo { display: flex; gap: 12px; flex-wrap: wrap; margin: 16px 0; }
+.article-body .color-item { padding: 8px 16px; border-radius: 6px; font-size: 14px; font-weight: 600; }
+.article-body .color-green { background: #e8f5e9; color: #2e7d32; border: 2px solid #4caf50; }
+.article-body .color-orange { background: #fff3e0; color: #e65100; border: 2px solid #ff9800; }
+.article-body .color-red { background: #ffebee; color: #c62828; border: 2px solid #f44336; }
+.article-body .color-blue { background: #e3f2fd; color: #1565c0; border: 2px solid #2196f3; }
+.back-link { display: inline-flex; align-items: center; gap: 6px; color: #64748b; font-size: 14px; font-weight: 500; text-decoration: none; transition: color 0.2s; }
+.back-link:hover { color: #1d4ed8; }
+.article-page { background: #fff; }
+.related-posts { margin: 64px auto 0; padding-top: 40px; border-top: 2px solid #e2e8f0; max-width: 720px; }
+.related-posts h3 { font-size: 20px; font-weight: 700; margin-bottom: 24px; color: #1e293b; }
+.related-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.related-card { display: block; padding: 20px; background: #f8fafc; border-radius: 8px; border: 1px solid #e2e8f0; text-decoration: none; transition: all 0.2s; }
+.related-card:hover { border-color: #3b82f6; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
+.related-card .article-tag { margin-bottom: 8px; display: inline-block; }
+.related-card h4 { font-size: 16px; font-weight: 600; line-height: 1.4; margin-bottom: 8px; color: #1e293b; }
+.related-card:hover h4 { color: #1d4ed8; }
+.related-card .article-date { font-size: 13px; color: #64748b; }
+@media (max-width: 768px) {
+  .related-grid { grid-template-columns: 1fr; }
+  .article-hero h1 { font-size: 24px; }
+  .article-hero { padding: 40px 0 24px; }
+  .article-body { padding: 24px 0; }
+}
+</style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">普托云联</div>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="solutions.html">解决方案</a></li>
+                <li><a href="products.html">产品中心</a></li>
+                <li><a href="cases.html">客户案例</a></li>
+                <li><a href="news.html">新闻中心</a></li>
+                <li><a href="about.html">关于我们</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+            </ul>
+            <div class="lang-switch">
+                <a href="index.html">简</a>
+                <a href="../tw/index.html">繁</a>
+                <a href="../en/index.html">EN</a>
+            </div>
+        </div>
+    </nav>
+<div class="article-hero">
+    <div class="container">
+        <a href="news.html" class="back-link" style="color: rgba(255,255,255,0.8);">← 返回新闻列表</a>
+        <div>
+            <span class="article-tag" style="background: rgba(255,255,255,0.2); color: #fff; padding: 4px 14px; border-radius: 100px; font-size: 12px; font-weight: 600;">行业干货</span>
+        </div>
+        <h1>接了个大单，做完一算还倒亏 3 万？这家工厂现在接单前先算一笔账</h1>
+        <span style="font-size: 14px; opacity: 0.8;">2026-09-14</span>
+    </div>
+</div>
+
+<main class="article-page">
+    <div class="container">
+        
+        <article class="article-content">
+            
+            
+
+            <div class="article-body">
+                <p>几乎每个老板，都听过销售拍着胸脯说这句话——<strong>「这单我算过了，稳赚！」</strong></p>
+
+                <p>可等货做完了、款收回来了，月底一盘账，才发现这单是亏的。</p>
+
+                <p>钱去哪了？<strong>没人说得清。</strong></p>
+
+                <div class="scenario-box">
+                    <h4>💰 一个「铁定赚钱」的大单上午</h4>
+                    <p><strong>上午 10:20</strong> 销售王总冲进张总办公室，一脸兴奋："张总，华南那个新客户试单拿下了！首批 8 万件，单价 3.5 元，我算过了，毛利至少 15%！"</p>
+                    <p>张总没急着高兴，把单子输进系统跑了一遍<strong>成本试算</strong>。</p>
+                    <p>屏幕上跳出来几行字：</p>
+                    <p>原料 1.82 元 / 件</p>
+                    <p>电费 0.38 元 / 件（夜班赶工，一半落在尖峰时段）</p>
+                    <p>人工 0.62 元 / 件</p>
+                    <p>模具分摊 0.55 元 / 件</p>
+                    <p>良品率预估 91%，返工报废摊进去再 +0.18 元 / 件</p>
+                    <p>客户账期 126 天，资金占用成本 +0.09 元 / 件</p>
+                    <p><strong>合计单位成本 3.64 元 → 毛利 -3.4%</strong></p>
+                    <p>王总盯着屏幕愣住了："3.5 的单价，怎么算出来还倒亏？"</p>
+                    <p>张总平静地说："你只算了原料，没算电费峰谷、没算返工、没算那 126 天账期压着的钱。"</p>
+                    <p>"<strong>以后接单，先跑系统。</strong>"</p>
+                </div>
+
+                <p class="highlight">接单靠感觉，赚钱靠运气。这不是销售不努力，是「成本」这东西，从来没人算清过。</p>
+
+                <p>你以为的矛盾是「销售接不到单」和「工厂做不赢利」。真正的病根是——<strong>这一单到底赚不赚钱，接之前没人知道。</strong></p>
+
+                <hr style="border: none; border-top: 1px solid #eee; margin: 30px 0;">
+
+                <h2>💸 「拍脑袋报价」的真实成本</h2>
+
+                <p>没有系统的时候，工厂的接单是这样的：</p>
+
+                <ul style="padding-left: 20px;">
+                    <li>报价只算原料，电费、人工、模具全靠拍脑袋</li>
+                    <li>夜班赶单全落在峰时电价，电费比白天贵一半——<strong>没人摊进单子里</strong></li>
+                    <li>返工报废的钱，月底混进总账，<strong>哪张单亏的算不清</strong></li>
+                    <li>客户账期一拖就是几个月，钱压在外边还要倒贴利息</li>
+                    <li>赚钱单和亏本单混在一起，忙了一年，利润薄得可怜</li>
+                </ul>
+
+                <p>这些「看不见」，一年吃掉多少钱？</p>
+
+                <table class="cost-table">
+                    <tr>
+                        <th>隐性成本</th>
+                        <th>说明</th>
+                    </tr>
+                    <tr>
+                        <td>报价漏项</td>
+                        <td>电费峰谷、模具分摊、返工报废、资金占用，四项里漏三项</td>
+                    </tr>
+                    <tr>
+                        <td>返工报废</td>
+                        <td>良品率 91% 意味着 9% 的成本直接打了水漂</td>
+                    </tr>
+                    <tr>
+                        <td>峰时电费</td>
+                        <td>夜班赶单落在尖峰时段，电费近乎翻倍</td>
+                    </tr>
+                    <tr>
+                        <td>账期占用</td>
+                        <td>126 天账期，钱压在客户手里，还要倒贴资金成本</td>
+                    </tr>
+                </table>
+
+                <p>一个中型注塑厂，一年接单几百张，只要有 <span class="stat-highlight">10%</span> 的单是「算起来赚、做起来亏」：</p>
+
+                <p>一年暗亏 <span class="stat-highlight">十几万到几十万</span>，而且这笔钱花得最憋屈——<strong>不是机器不行、不是工人不行，纯粹是「没算清」。</strong></p>
+
+                <hr style="border: none; border-top: 1px solid #eee; margin: 30px 0;">
+
+                <h2>📱 MES 怎么管？成本核算模块，把每一分钱算到单子上</h2>
+
+                <p>普托云联 MES 的<strong>成本核算</strong>模块，核心逻辑就一条——</p>
+
+                <p><strong>把「大概赚」变成「精确赚」。</strong></p>
+
+                <div class="color-demo">
+                    <span class="color-item color-green">✅ 设备电费报表 — 峰谷平尖峰分时统计，每台机每天用了多少电、花了多少钱</span>
+                    <span class="color-item color-blue">✅ 产品分类统计 — 原料/电费/人工成本占比饼图，一眼看出钱花在哪</span>
+                    <span class="color-item color-orange">✅ 单位成本核算 — 每个产品、每个订单的真实单位成本，毛利一目了然</span>
+                    <span class="color-item color-red">✅ 接单前成本试算 — 销售报价前先跑一遍，能不能接、赚不赚钱，数据说话</span>
+                </div>
+
+                <p>它是这样工作的：</p>
+
+                <p><strong>1. 设备电费，分时到机</strong></p>
+                <ul style="padding-left: 20px;">
+                    <li>每台机每天峰/谷/平/尖峰电量、电费，自动统计</li>
+                    <li>高能耗设备一眼识别，把能挪的工序挪到谷时，电费直降</li>
+                    <li>夜班赶单落在尖峰时段，多花的电费明明白白<strong>摊进那批单</strong></li>
+                </ul>
+
+                <p><strong>2. 产品成本，拆到一分钱</strong></p>
+                <ul style="padding-left: 20px;">
+                    <li>原料 + 电费 + 人工 + 模具分摊，逐项累加，一个不落</li>
+                    <li>饼图看占比：原料高 → 优化采购；人工高 → 自动化改造；电费高 → 节能</li>
+                    <li>良品率低的产品，单位成本自动被拉高——<strong>亏本货藏不住</strong></li>
+                </ul>
+
+                <p><strong>3. 接单前，先算账</strong></p>
+                <ul style="padding-left: 20px;">
+                    <li>销售报价前，系统先跑一遍成本试算</li>
+                    <li>含返工报废、含账期资金占用、含延期罚金——<strong>四项漏项全补上</strong></li>
+                    <li>毛利是正是负，接不接，屏幕上见分晓</li>
+                </ul>
+
+                <p><strong>4. 月底不再猜</strong></p>
+                <ul style="padding-left: 20px;">
+                    <li>每张单赚多少、亏多少，自动汇总</li>
+                    <li>高毛利产品放大做，亏本产品要么调价、要么砍掉</li>
+                    <li>老板打开手机，就知道这个月是<strong>真赚了</strong>还是账面赚了</li>
+                </ul>
+
+                <p><strong>接之前算清楚，比做完再后悔强一百倍。</strong></p>
+
+                <hr style="border: none; border-top: 1px solid #eee; margin: 30px 0;">
+
+                <h2>🔥 上线前后对比：从「拍脑袋接单」到「先算账再接单」</h2>
+
+                <table class="compare-table">
+                    <tr>
+                        <th>维度</th>
+                        <th>上线前</th>
+                        <th>上线后</th>
+                    </tr>
+                    <tr>
+                        <td>报价依据</td>
+                        <td>只算原料，拍脑袋</td>
+                        <td>全成本试算，含电费返工账期</td>
+                    </tr>
+                    <tr>
+                        <td>成本口径</td>
+                        <td>原料 + 大概</td>
+                        <td>原料+电费+人工+模具+返工+资金占用</td>
+                    </tr>
+                    <tr>
+                        <td>电费</td>
+                        <td>月底一张总账单</td>
+                        <td>峰谷平尖峰分时到机</td>
+                    </tr>
+                    <tr>
+                        <td>亏本单</td>
+                        <td>做完才知道</td>
+                        <td>接单前就知道</td>
+                    </tr>
+                    <tr>
+                        <td>产品盈利性</td>
+                        <td>混在一起分不清</td>
+                        <td>逐产品单位成本 + 毛利</td>
+                    </tr>
+                    <tr>
+                        <td>老板掌控力</td>
+                        <td>赚了亏了全靠猜</td>
+                        <td>手机看每单毛利、每月总账</td>
+                    </tr>
+                </table>
+
+                <hr style="border: none; border-top: 1px solid #eee; margin: 30px 0;">
+
+                <h2>🎯 更深层的逻辑</h2>
+
+                <p>接单这件事，本质不是「接不接得到」，是——<strong>「接得值不值」。</strong></p>
+
+                <p>以前，销售对业绩负责，只关心签不签得下来；财务对总账负责，只关心月底是赚是亏。中间隔着一道墙：<strong>没有一个人对「这一单到底赚不赚钱」负责。</strong></p>
+
+                <p>结果就是：销售拼命接单，工厂拼命做，月底一算，忙了一年利润却薄得可怜——因为一堆亏本单，被赚钱单平均掉了。</p>
+
+                <p>MES 成本核算解决的是什么？</p>
+
+                <p><strong>不是「算得更快」——是「让每一单的成本、每一单的毛利，第一次被看见」。</strong></p>
+
+                <p>销售接单前先算账，就知道这单值不值得接；老板打开手机，就知道哪类产品赚钱、哪类在放血；财务月底对账，数字第一次和车间对得上。</p>
+
+                <p>当每一分钱的去向都清清楚楚，<strong>亏本单就再也藏不住了。</strong></p>
+
+                <div class="quote-box">
+                    <p style="margin: 0;"><strong>"以前接单就是拼胆量——销售说能赚就接，做完才知道亏没亏。现在接单前先跑一遍成本试算，电费峰谷、返工报废、账期占用全在里面。王总第一次看到那单毛利 -3.4%，愣了半天。不是销售不努力，是以前没人把账算给他看。"</strong></p>
+                    <p style="margin: 8px 0 0 0; font-size: 14px; color: #999;">—— 深圳某注塑厂老板，上线成本核算后砍掉 4 条亏本产品线，整体毛利提升 6 个点</p>
+                </div>
+
+                <p>接单不是胆量活——<strong>是算术活。</strong></p>
+
+                <p>先算清楚每一分钱，再决定接不接。这笔账，每个老板都应该让系统替他算。</p>
+
+                <div style="text-align: center; padding: 30px 0; background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%); color: white; border-radius: 12px; margin-top: 30px;">
+                    <h3 style="margin-bottom: 8px;">普托云联 · MES 制造执行系统</h3>
+                    <p style="opacity: 0.9; margin-bottom: 16px;">成本核算模块 — 设备电费分时报表 + 产品成本统计 + 接单前试算，让每一分钱看得见</p>
+                    <p style="font-size: 14px; opacity: 0.8;">深圳市普托云联技术有限公司</p>
+                    <p style="font-size: 14px; opacity: 0.8;"><a href="https://tjskynet.com" style="color: #fff;">tjskynet.com</a></p>
+                </div>
+            </div>
+        
+<div class="related-posts">
+  <h3>📖 推荐阅读</h3>
+  <div class="related-grid">
+    <a href="news-detail-22.html" class="related-card">
+      <span class="article-tag industry-tag">行业干货</span>
+      <h4>插一单、崩三单？这家工厂用一张甘特图，把排产会议从「吵架大会」变成了「看屏幕」</h4>
+      <span class="article-date">2026-09-07</span>
+    </a>
+    <a href="news-detail-21.html" class="related-card">
+      <span class="article-tag industry-tag">行业干货</span>
+      <h4>设备坏了才修？这家工厂一年非计划停机 127 次，换了个管理方式后降到 12 次</h4>
+      <span class="article-date">2026-07-06</span>
+    </a>
+    <a href="news-detail-19.html" class="related-card">
+      <span class="article-tag industry-tag">行业干货</span>
+      <h4>客户催单，还在车间靠吼？坐办公室掏出手机一看，比问谁都准</h4>
+      <span class="article-date">2026-06-15</span>
+    </a>
+    <a href="news-detail-18.html" class="related-card">
+      <span class="article-tag industry-tag">行业干货</span>
+      <h4>一出次品就开会扯皮？这家工厂用一招让所有人闭嘴</h4>
+      <span class="article-date">2026-06-08</span>
+    </a>
+  </div>
+</div>
+        </article>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <p>© 2026 深圳市普托云联技术有限公司 粤ICP备16060739号-1</p>
+    </div>
+</footer>
+</body>
+</html>
