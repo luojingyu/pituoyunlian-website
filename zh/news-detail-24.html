@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>客户加单，到底还能不能接？这家工厂用一块仪表盘看清闲置产能 | 普托云联</title>
+<meta name="description" content="客户临时加单，销售说能接、车间说排不下，老板夹在中间。MES产能仪表盘+OEE把闲置产能折算成可接订单数，接单决策有据可依。">
+<meta name="keywords" content="产能仪表盘,产能利用率,闲置产能,OEE,稼动率,接单决策,排产,设备效率,注塑厂,工厂管理,数字化,普托云联">
+<link rel="stylesheet" href="../css/style.css">
+
+<style>
+/* Article page styles */
+.article-hero { background: linear-gradient(135deg, #1e3a5f 0%, #2563eb 50%, #0ea5e9 100%); padding: 60px 0 40px; color: #fff; }
+.article-hero .container { max-width: 760px; }
+.article-hero .article-tag { background: rgba(255,255,255,0.2); color: #fff; padding: 4px 14px; border-radius: 100px; font-size: 12px; font-weight: 600; display: inline-block; margin-bottom: 12px; }
+.article-hero h1 { font-size: 32px; font-weight: 800; line-height: 1.4; margin-bottom: 12px; }
+.article-hero .article-date { font-size: 14px; opacity: 0.8; }
+.article-body { max-width: 720px; margin: 0 auto; padding: 40px 0; line-height: 1.9; font-size: 17px; color: #333; }
+.article-body p { margin-bottom: 20px; }
+.article-body .highlight { color: #c00; font-weight: 600; font-size: 20px; }
+.article-body .quote-box { background: #f5f7fa; border-left: 4px solid #1a73e8; padding: 20px; margin: 24px 0; border-radius: 0 6px 6px 0; }
+.article-body .scenario-box { background: #fff8e1; border: 1px solid #ffe082; padding: 24px; margin: 24px 0; border-radius: 8px; }
+.article-body .scenario-box h4 { color: #f57f17; margin-top: 0; }
+.article-body .cost-table, .article-body .compare-table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+.article-body .cost-table th, .article-body .cost-table td { padding: 12px 16px; border-bottom: 1px solid #eee; text-align: left; }
+.article-body .cost-table th { background: #f0f7ff; font-weight: 600; }
+.article-body .compare-table th, .article-body .compare-table td { padding: 10px 14px; border: 1px solid #ddd; text-align: center; }
+.article-body .compare-table th { background: #1a73e8; color: #fff; }
+.article-body .compare-table tr:nth-child(even) { background: #f9f9f9; }
+.article-body .stat-highlight { display: inline-block; background: #1a73e8; color: #fff; padding: 2px 10px; border-radius: 4px; font-weight: 600; }
+.article-body .color-demo { display: flex; gap: 12px; flex-wrap: wrap; margin: 16px 0; }
+.article-body .color-item { padding: 8px 16px; border-radius: 6px; font-size: 14px; font-weight: 600; }
+.article-body .color-green { background: #e8f5e9; color: #2e7d32; border: 2px solid #4caf50; }
+.article-body .color-orange { background: #fff3e0; color: #e65100; border: 2px solid #ff9800; }
+.article-body .color-red { background: #ffebee; color: #c62828; border: 2px solid #f44336; }
+.article-body .color-blue { background: #e3f2fd; color: #1565c0; border: 2px solid #2196f3; }
+.back-link { display: inline-flex; align-items: center; gap: 6px; color: #64748b; font-size: 14px; font-weight: 500; text-decoration: none; transition: color 0.2s; }
+.back-link:hover { color: #1d4ed8; }
+.article-page { background: #fff; }
+.related-posts { margin: 64px auto 0; padding-top: 40px; border-top: 2px solid #e2e8f0; max-width: 720px; }
+.related-posts h3 { font-size: 20px; font-weight: 700; margin-bottom: 24px; color: #1e293b; }
+.related-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.related-card { display: block; padding: 20px; background: #f8fafc; border-radius: 8px; border: 1px solid #e2e8f0; text-decoration: none; transition: all 0.2s; }
+.related-card:hover { border-color: #3b82f6; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
+.related-card .article-tag { margin-bottom: 8px; display: inline-block; }
+.related-card h4 { font-size: 16px; font-weight: 600; line-height: 1.4; margin-bottom: 8px; color: #1e293b; }
+.related-card:hover h4 { color: #1d4ed8; }
+.related-card .article-date { font-size: 13px; color: #64748b; }
+@media (max-width: 768px) {
+  .related-grid { grid-template-columns: 1fr; }
+  .article-hero h1 { font-size: 24px; }
+  .article-hero { padding: 40px 0 24px; }
+  .article-body { padding: 24px 0; }
+}
+</style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">普托云联</div>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="solutions.html">解决方案</a></li>
+                <li><a href="products.html">产品中心</a></li>
+                <li><a href="cases.html">客户案例</a></li>
+                <li><a href="news.html">新闻中心</a></li>
+                <li><a href="about.html">关于我们</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+            </ul>
+            <div class="lang-switch">
+                <a href="index.html">简</a>
+                <a href="../tw/index.html">繁</a>
+                <a href="../en/index.html">EN</a>
+            </div>
+        </div>
+    </nav>
+<div class="article-hero">
+    <div class="container">
+        <a href="news.html" class="back-link" style="color: rgba(255,255,255,0.8);">← 返回新闻列表</a>
+        <div>
+            <span class="article-tag" style="background: rgba(255,255,255,0.2); color: #fff; padding: 4px 14px; border-radius: 100px; font-size: 12px; font-weight: 600;">行业干货</span>
+        </div>
+        <h1>客户加单，到底还能不能接？这家工厂用一块仪表盘看清「闲置产能」，接单不再拍脑袋</h1>
+        <span style="font-size: 14px; opacity: 0.8;">2026-09-21</span>
+    </div>
+</div>
+
+<main class="article-page">
+    <div class="container">
+        
+        <article class="article-content">
+            
+            
+
+            <div class="article-body">
+                <p>老板最怕接到的电话，不是客户投诉，是这种——</p>
+
+                <p><strong>「张总，上次那批客户很满意，想加单！数量翻倍，下个月中要，能接吗？」</strong></p>
+
+                <p>电话那头销售语气兴奋，电话这头老板心里打鼓：</p>
+
+                <p>厂里机器排得满不满？还能挤出多少产能？这单接下去，会不会把别的单挤黄了？<strong>没人能给个准话。</strong></p>
+
+                <div class="scenario-box">
+                    <h4>🏭 一个「加单」引发的两难下午</h4>
+                    <p><strong>下午 3:00</strong> 销售小李冲进张总办公室："张总！华泰那个客户要加单！原单 5 万件，现在要 10 万件，下月 18 号交！"</p>
+                    <p>张总问："厂里还能排得下吗？"</p>
+                    <p>小李一拍胸脯："能！机器转着不就有产能吗？"</p>
+                    <p>张总叫来车间刘主管，刘主管直摇头："张总，排不下。3 号、5 号机下个月都满了，8 号机又老坏。硬接，前几个单都得延期。"</p>
+                    <p>小李急了："客户催得紧，这次不接，下回人家就找别家了！"</p>
+                    <p>刘主管也急："接了做不出来，违约金谁赔？"</p>
+                    <p>两个人吵得面红耳赤，张总坐在中间，<strong>一句话都答不上来。</strong></p>
+                    <p>他脑子里就一个问题：<strong>我厂里到底还能接多少单？</strong></p>
+                </div>
+
+                <p class="highlight">销售说「能接」，车间说「排不下」，老板夹在中间没有数据。这不是谁不努力，是「产能」这东西，从来没人说清楚过。</p>
+
+                <p>你以为的矛盾是「接单」和「交期」打架。真正的病根是——<strong>厂里到底还有多少闲置产能，老板自己都不知道。</strong></p>
+
+                <hr style="border: none; border-top: 1px solid #eee; margin: 30px 0;">
+
+                <h2>📉 「产能黑箱」的真实代价</h2>
+
+                <p>没有系统的时候，工厂的产能是一笔糊涂账：</p>
+
+                <ul style="padding-left: 20px;">
+                    <li>机器「看起来都在转」，但有多少是真在出活、多少在空转、多少在修——<strong>分不清</strong></li>
+                    <li>「能接多少单」全凭老师傅估计，销售问一句，主管拍一下脑袋</li>
+                    <li>接多了，交期违约、客户流失；接少了，机器闲着、白白养人工</li>
+                    <li>哪台机效率低、哪台机总坏、哪个班次拖后腿——<strong>全是一团浆糊</strong></li>
+                    <li>想扩产还是想接单，没有数据，决策只能靠胆量</li>
+                </ul>
+
+                <p>这些「看不见」，一年吃掉多少钱？</p>
+
+                <table class="cost-table">
+                    <tr>
+                        <th>隐性损失</th>
+                        <th>说明</th>
+                    </tr>
+                    <tr>
+                        <td>闲置产能</td>
+                        <td>机器明明有富余，却不敢接单，产能白白浪费</td>
+                    </tr>
+                    <tr>
+                        <td>超负荷接单</td>
+                        <td>拍脑袋接单，交期违约，赔违约金 + 丢客户</td>
+                    </tr>
+                    <tr>
+                        <td>低效设备</td>
+                        <td>OEE 低的机器混在好机器里，拖累整体产出</td>
+                    </tr>
+                    <tr>
+                        <td>盲目扩产</td>
+                        <td>不知道真实利用率，拍板买设备，结果买回来还是闲着</td>
+                    </tr>
+                </table>
+
+                <p>一个中型注塑厂，如果产能利用率长期只有 <span class="stat-highlight">60%</span>，意味着有 <span class="stat-highlight">40%</span> 的产能是闲着的——</p>
+
+                <p>这 40% 不是机器不行，是<strong>老板看不见它、接单时不敢用它</strong>。钱，就白白从手指缝里漏掉了。</p>
+
+                <hr style="border: none; border-top: 1px solid #eee; margin: 30px 0;">
+
+                <h2>📱 MES 怎么管？产能仪表盘 + OEE，把「闲置产能」变成「可接订单数」</h2>
+
+                <p>普托云联 MES 的<strong>产能仪表盘</strong>，核心逻辑就一条——</p>
+
+                <p><strong>把「感觉还能接」变成「数据告诉你能接多少」。</strong></p>
+
+                <div class="color-demo">
+                    <span class="color-item color-green">✅ 产能利用率 — 实际有效产能 ÷ 理论最大产能，圆环图一眼看清</span>
+                    <span class="color-item color-blue">✅ 闲置产能折算 — 把闲置产能换算成「还可承接约 XX 个标准订单」</span>
+                    <span class="color-item color-orange">✅ OEE 设备综合效率 — 时间稼动率 × 性能稼动率 × 良品率，找准损失</span>
+                    <span class="color-item color-red">✅ 稼动率面板 — 每台机绿/橙/红一眼识别，低效设备藏不住</span>
+                </div>
+
+                <p>它是这样工作的：</p>
+
+                <p><strong>1. 产能利用率，一眼看清</strong></p>
+                <ul style="padding-left: 20px;">
+                    <li>圆环图实时显示「当前产能利用率」和「闲置产能比率」</li>
+                    <li>利用率低于 70% → 明显有空闲，可主动接单填补</li>
+                    <li>利用率饱和到 90%+ → 别硬接了，要么优化排产、要么考虑扩产</li>
+                </ul>
+
+                <p><strong>2. 闲置产能，折算成订单数</strong></p>
+                <ul style="padding-left: 20px;">
+                    <li>系统把闲置产能直接算成「还可承接约 XX 个标准订单」</li>
+                    <li>销售接单前瞄一眼，<strong>心里就有底</strong>：能不能接、还能接多少</li>
+                    <li>再也不用销售和车间吵架，数据就是裁判</li>
+                </ul>
+
+                <p><strong>3. OEE，把损失拆到根上</strong></p>
+                <ul style="padding-left: 20px;">
+                    <li><strong>时间稼动率</strong>低 → 停机太多（故障、换模、待料），治停机</li>
+                    <li><strong>性能稼动率</strong>低 → 跑得慢（参数不当、设备老化），治低速</li>
+                    <li><strong>良品率</strong>低 → 质量问题（模具、工艺、原料），治次品</li>
+                    <li>OEE 长期低于 65%，系统直接标红，<strong>该组织专项改善了</strong></li>
+                </ul>
+
+                <p><strong>4. 稼动率面板，低效设备藏不住</strong></p>
+                <ul style="padding-left: 20px;">
+                    <li>所有机台排成一列，时间稼动率、性能稼动率用进度条展示</li>
+                    <li>绿色正常、橙色偏低、红色重点关注——<strong>哪台机在拖后腿一目了然</strong></li>
+                    <li>8 号机那种「又老又坏」的，数据一摆，该修修、该换换</li>
+                </ul>
+
+                <p><strong>能不能接单、能接多少、接了会不会崩，屏幕上全有答案。</strong></p>
+
+                <hr style="border: none; border-top: 1px solid #eee; margin: 30px 0;">
+
+                <h2>🔥 上线前后对比：从「拍脑袋接单」到「看仪表盘接单」</h2>
+
+                <table class="compare-table">
+                    <tr>
+                        <th>维度</th>
+                        <th>上线前</th>
+                        <th>上线后</th>
+                    </tr>
+                    <tr>
+                        <td>产能感知</td>
+                        <td>机器「看着都在转」</td>
+                        <td>利用率、闲置产能实时可见</td>
+                    </tr>
+                    <tr>
+                        <td>接单决策</td>
+                        <td>销售和车间吵，老板拍脑袋</td>
+                        <td>仪表盘折算出可接订单数</td>
+                    </tr>
+                    <tr>
+                        <td>设备效率</td>
+                        <td>哪台机慢、哪台机总坏分不清</td>
+                        <td>OEE 三项拆解 + 稼动率红绿灯</td>
+                    </tr>
+                    <tr>
+                        <td>扩产判断</td>
+                        <td>不知道利用率就拍板买设备</td>
+                        <td>数据支撑，该接单接单、该扩产扩产</td>
+                    </tr>
+                    <tr>
+                        <td>交期兑现</td>
+                        <td>接多了违约、接少了闲置</td>
+                        <td>产能匹配订单，交期有据可依</td>
+                    </tr>
+                    <tr>
+                        <td>老板掌控力</td>
+                        <td>厂里到底能接多少，全靠猜</td>
+                        <td>手机看产能利用率、可接订单数</td>
+                    </tr>
+                </table>
+
+                <hr style="border: none; border-top: 1px solid #eee; margin: 30px 0;">
+
+                <h2>🎯 更深层的逻辑</h2>
+
+                <p>接单这件事，本质不是「敢不敢接」，是——<strong>「值不值得接、接不接得下」。</strong></p>
+
+                <p>以前，销售对业绩负责，只关心签不签得下来；车间对生产负责，只关心做不做得出来。中间隔着一道墙：<strong>没有一个人对「厂里到底还有多少产能」负责。</strong></p>
+
+                <p>结果就是：销售拼命接单，车间拼命喊排不下，老板夹在中间，靠拍脑袋做决定。接多了违约，接少了闲置，怎么都是亏。</p>
+
+                <p>MES 产能仪表盘解决的是什么？</p>
+
+                <p><strong>不是「算得更快」——是「让闲置产能第一次被看见，让接单决策第一次有数据撑腰」。</strong></p>
+
+                <p>销售接单前看一眼仪表盘，就知道这单接不接得下；车间排产前看一眼 OEE，就知道哪台机还能再加、哪台机该修了；老板打开手机，就知道厂里是真忙还是假忙。</p>
+
+                <p>当「还能接多少单」第一次有了准确答案，<strong>接单就再也不是胆量活，而是算术活。</strong></p>
+
+                <div class="quote-box">
+                    <p style="margin: 0;"><strong>"以前客户加单，销售说能接、车间说排不下，我夹在中间，每次都要猜。现在打开仪表盘，产能利用率 68%，还能接 1 万多件，直接告诉销售——接，但只接 1 万。销售有底气回客户，车间也不慌。厂里那 30% 的闲置产能，总算没白养着了。"</strong></p>
+                    <p style="margin: 8px 0 0 0; font-size: 14px; color: #999;">—— 深圳某注塑厂老板，上线产能仪表盘后，产能利用率从 61% 提到 78%，接单决策再也不靠猜</p>
+                </div>
+
+                <p>产能不是靠机器多，是<strong>靠看得见、用得上。</strong></p>
+
+                <p>先看清厂里还能接多少，再决定接不接。这块仪表盘，每个老板都该有。</p>
+
+                <div style="text-align: center; padding: 30px 0; background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%); color: white; border-radius: 12px; margin-top: 30px;">
+                    <h3 style="margin-bottom: 8px;">普托云联 · MES 制造执行系统</h3>
+                    <p style="opacity: 0.9; margin-bottom: 16px;">产能仪表盘模块 — 产能利用率 + 闲置产能折算 + OEE 稼动率，让接单决策有据可依</p>
+                    <p style="font-size: 14px; opacity: 0.8;">深圳市普托云联技术有限公司</p>
+                    <p style="font-size: 14px; opacity: 0.8;"><a href="https://tjskynet.com" style="color: #fff;">tjskynet.com</a></p>
+                </div>
+            </div>
+        
+<div class="related-posts">
+  <h3>📖 推荐阅读</h3>
+  <div class="related-grid">
+    <a href="news-detail-23.html" class="related-card">
+      <span class="article-tag industry-tag">行业干货</span>
+      <h4>接了个大单，做完一算还倒亏 3 万？这家工厂现在接单前先算一笔账</h4>
+      <span class="article-date">2026-09-14</span>
+    </a>
+    <a href="news-detail-22.html" class="related-card">
+      <span class="article-tag industry-tag">行业干货</span>
+      <h4>插一单、崩三单？这家工厂用一张甘特图，把排产会议从「吵架大会」变成了「看屏幕」</h4>
+      <span class="article-date">2026-09-07</span>
+    </a>
+    <a href="news-detail-21.html" class="related-card">
+      <span class="article-tag industry-tag">行业干货</span>
+      <h4>设备坏了才修？这家工厂一年非计划停机 127 次，换了个管理方式后降到 12 次</h4>
+      <span class="article-date">2026-07-06</span>
+    </a>
+    <a href="news-detail-19.html" class="related-card">
+      <span class="article-tag industry-tag">行业干货</span>
+      <h4>客户催单，还在车间靠吼？坐办公室掏出手机一看，比问谁都准</h4>
+      <span class="article-date">2026-06-15</span>
+    </a>
+  </div>
+</div>
+        </article>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <p>© 2026 深圳市普托云联技术有限公司 粤ICP备16060739号-1</p>
+    </div>
+</footer>
+</body>
+</html>
